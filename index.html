@@ -6,48 +6,81 @@
     <style>
         button {
             background-color: #4CAF50;
-            /* Green */
-            border: none;
-            color: white;
-            padding: 16px 32px;
             text-align: center;
-            text-decoration: none;
             display: block;
-            font-size: 16px;
-            margin: 4px 2px;
+            font-size: 20px;
+            margin-top: 30px;
+            padding: 15px;
             font-family: "Lucida Console", Times, Monospace;
             -webkit-transition-duration: 0.4s;
             /* Safari */
             transition-duration: 0.4s;
             cursor: pointer;
+            background-color: royalblue;
+            color: darkorange;
+            border: 2px solid royalblue;
         }
         
-        button {
-            background-color: white;
-            color: black;
-            border: 2px solid #e7e7e7;
+        button:hover {
+            background-color: darkorange;
+            color: royalblue;
         }
-        h3{
-            font-family: "Lucida Console", Times, Monospace;
+        
+        #httpmethods,#httpmeshead {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            width: 70%;
+            padding:30px;
+            background-color: whitesmoke;
+            box-shadow: 0 5px 20px royalblue;
+            border-radius: 40px;
+
         }
+
+        h3 {
+            text-align: center;
+            font-family: "Arial Narrow", Times, Monospace;
+            color: royalblue;
+            font-size: 2em;
+        }
+        
         ul li {
             margin-bottom: 10px;
         }
         
         li {
-            font-family: "Lucida Console", Times, Monospace;
+            font-family: "Arial Narrow", Times, Monospace;
+            font-size: 1.5em;
         }
         
-        button:hover {
-            background-color: #e7e7e7;
+        #bodie {
+            background: url(http://www.psdgraphics.com/file/orange-background.jpg);
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
         }
-
+        
+        #banner {
+            width:800px;
+            height: 100px;
+            margin:30px auto;
+            text-align: center;
+            box-shadow: 0 2px 20px rgba(0,0,0,1);
+            border-radius: 100px;
+            font-size: 80px;
+            color: royalblue;
+            background: url(http://joychurchinternational.org/wp-content/uploads/2014/02/blue-orange-fog-banner-background.jpg);
+            background-size: cover;
+            font-family: "Palatino Linotype";
+        }
     </style>
 </head>
 
-<body>
+<body id="bodie">
     <div class='contents'>
-        <h2>HTTP</h2>
+        <h2 id="banner">HTTP</h2>
         <div class='http'>
             <ul>
 <!--Francisco HTTP Description and Versions-->
@@ -55,7 +88,7 @@
         </div>
         <button onclick="hideMethods()">HTTP Methods</button>
         <div id='httpmethods' style='display: none;'>
-            <h3>HTTP Methods</h3>
+            <h3> HTTP Methods </h3>
             <ul>
                 <li>GET - Requests data from the resource. Can be cached and remain the browser history.</li>
                 <li>POST - Submits data to the resource. Cannot be cached and process won’t be saved in the browser history. </li>
@@ -69,7 +102,7 @@
         <button onclick="hideHeaders()">Message Headers</button>
         <div id='httpmeshead' style='display: none;'>
 <!--Gian-->
-            <h3>Message Headers</h3>
+            <h3> Message Headers </h3>
             <ul>
                 <li>General</li>
                 <li>Request</li>
@@ -142,8 +175,6 @@
                     <li>Content-type - This header field states what type of content was sent to the browser. This provides information to the browser on what type of file it is recieving for the browser to be able to render the file properly in its original format. i.e. Content-Type: text/html;</li>
                     <li>Expires - This entity header field indicates the date and time at which the server response is considered stale. A response that is already expired has an Expires entity header field equal to the date header value. For a none expiring response the server sends an Expires entity header field with a value 1 year ahead of the current date/time. i.e. Expires: Mon, 19 Jun 2017 23:59:59 PT;</li>
                     <li>Last Modified - This entity header field indicates the time and date the server thinks the resource was last modified. This is necessary in order for the browser to know if it needs to fetch the resource again due to an update or use the cached version of the resource to save the trouble of fetching the same file again. i.e. Last-Modified: Sun, 18 Jun 2017 08:59:15 PT</li>
-                </ul>
-                </li>
                 </ul>
             </div>
         </div>
