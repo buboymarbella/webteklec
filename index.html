@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IT324: Web Systems and Technologies</title>
+    <style>
+        button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            margin: 4px 2px;
+            font-family: "Lucida Console", Times, Monospace;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        button {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+        }
+        h3{
+            font-family: "Lucida Console", Times, Monospace;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        
+        li {
+            font-family: "Lucida Console", Times, Monospace;
+        }
+        
+        button:hover {
+            background-color: #e7e7e7;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class='contents'>
+        <h2>HTTP</h2>
+        <div class='http'>
+            <ul>
+
+            </ul>
+        </div>
+        <button onclick="hideMethods()">HTTP Methods</button>
+        <div id='httpmethods' style='display: none;'>
+            <h3>HTTP Methods</h3>
+            <ul>
+                <li>GET - Requests data from the resource. Can be cached and remain the browser history.</li>
+                <li>POST - Submits data to the resource. Cannot be cached and process won’t be saved in the browser history. </li>
+                <li>HEAD - Same as GET but only returns HTTP headers </li>
+                <li>PUT - Uploads representation of the specified URI</li>
+                <li>DELETE - Deletes specified resource</li>
+                <li>OPTIONS - Returns HTTP methods that the server supports</li>
+                <li>CONNECT - Converts the request connection to a transparent TCP/IP tunnel</li>
+            </ul>
+        </div>
+        <button onclick="hideHeaders()">Message Headers</button>
+        <div id='httpmeshead' style='display: none;'>
+            <h3>Message Headers</h3>
+            <ul>
+                <li>General</li>
+                <li>Request</li>
+                <li>Response</li>
+                <li>Entity</li>
+            </ul>
+
+
+
+            <div class='httpmesheadfield'>
+                <h3>HTTP Message Header Fields:</h3>
+
+                <button onclick="hidegenHead()">GENERAL</button>
+                <ul id='genhead' style='display:none;'>
+                    <li>Cache-Control - is used by all caching mechanisms to indicate directives that must be followed along a request and response chain. The directives indicated by the Cache-control header field can override the default caching alorithms used by a server or client.</li>
+                    <li>Connection - The connection header field allows the sender to indicate what are desired for the connection to be made. The value of the connection header field is called the connection token.</li>
+                    <li>Date - Represents the date and time at which the response or request was created.</li>
+                    <li>Pragma - Pragma is used to indicate implementation-specific directives. The directives specify certain behavior from the protocol although some needs to be consistent.</li>
+                    <li>Trailer - If the Trailer header field is present it means that the client is willing to accept trailer fields.</li>
+                    <li>Transfer-encoding - This header field indicates the type of modification or transformation used on the message body in order to send it to the reciever.
+                    </li>
+                    <li>Upgrade - Specifies what the client is capable of handling and requests the switch to a much higher version or a different protocol. The server responds with a 101(Switching Protocols) code if possible.</li>
+                    <li>Via - Works much like the "Upgrade" header field. It states the additional communication protocols that the client is capable of handling. If the server finds the request as viable it will respond with a 101(Switching Protocols) code.
+                    </li>
+                    <li>Warning - Used to specify changes in the message which may not be reflected in the message as it is rendered. It states additional information regarding the transformation of the body.</li>
+                </ul>
+
+
+                <button onclick="hidereqHead()">REQUEST</button>
+                <ul id='reqhead' style='display:none;'>
+                    <li>Accept - used to specify media types that are acceptable for the response and indicates that the request is fixed to a small set of desired types.</li>
+                    <li>Accept-charset - indicates character sets that are acceptable for the response and allows users capable of learning special character sets to signal that capability to a server which can be used for representing documents in a specific character set.</li>
+                    <li>Accept-encoding - similar to accept, the difference is that it restricts the codings that are acceptable in the response.</li>
+                    <li>Accept-Language - similar to accept, the difference is that it restrics the languages that are acceptable in the response.</li>
+                    <li>Authorization - a user agent that authenticates itself usually with a server but it is unnecessary to do so. This field consists of credentials containing the authentication information of the user agent. </li>
+                    <li>Expect - indicates particular behaviors of the server that are required by the user.</li>
+                    <li>From - this should contain an e-mail address of the user who manipulates the requesting user agent.</li>
+                    <li>If-Match - this field is used with a method to make it conditional where a user has one or more entities involved or received from the resource. </li>
+                    <li>If-Modified-Since - is used with a method to make it conditional: if the request was not modified since the said time in this field, no entities will be returned from the server i.e. If-Modified-Since: Sat, 29 Oct 1994 19:43:31 GMT </li>
+                    <li>If-None-Match is used where a user that has one or more entities received from the resource can verify that none of the them are current by including a list of their entity tags that are associated in the header field. </li>
+                    <li>If-Range - is used with the GET method that if a user has a partial copy of an entity in its cache and that wishes to have an updated copy of the entity.</li>
+                    <li>If-Unmodified-Since - similarly like if-modified-since, it only sends a response that the entity has not been modified and works only when the server has last modified values associated with the object.</li>
+                    <li>Max-forward - is used to limit the number of gateways that can forward the request to the next server.</li>
+                    <li>Proxy-Authorization - request header contains the credentials to authenticate a user agent to a proxy, concerned with the status 407 Proxy Authentication that the server responded.</li>
+                    <li>Range - indicates a specific part of a document or object the the server should return. Many parts can be requested at the same time and may be returned in a document that has multiple parts.</li>
+                    <li>Referrer - a request header that contains the address of the previous web page that contains the link of the current page requested. </li>
+                    <li>User-Agent - is a request header which identifies the client, it tells the server what client software is being used, or browser is being used.</li>
+                </ul>
+
+                <button onclick="hideresHead()">RESPONSE</button>
+                <ul id='reshead' style='display:none;'>
+                    <li>Accept-Ranges - it is a marker in the Response HTTP header. It advertise its support of partial request that is used by the server. With the presence of this header, it will try to continue the interrupted download rather than to install it from the beginning.</li>
+                    <li>E-Tag - entity tag that is part of the HTTP, it is a protocol for the World Wide Web. It is one of several mechanisms that HTTP provides for web cache validation, that allows a client to make conditional requests. </li>
+                    <li>Location - it is a header field that is returned in response from an HTTP server in two conditions one is a) to ask a web browser to load a different web page and b) to provide information about the location of a newly created resource.</li>
+                    <li>Proxy-Authenticate - it is a request-header field that allows the client to identify or verify itself or its user to a proxy which requires authentication</li>
+                    <li>Retry-After - it is a response in HTTP header that indicates how long the user agent should wait before making a request again or follow-up request</li>
+                    <li>Server - t is a simple zero – configuration command-line. It is powerful enough for production usage, but it is very simple.</li>
+                    <li>Vary - it is a response header that determines how to handle or match future request headers to decide whether a cached response can be used or it needed to request a new one from the origin server. </li>
+                    <li>WWW-Authenticate - it is a response header that shows the authentication method to gain access to a resource </li>
+                </ul>
+                <button onclick="hideentHead()">ENTITY</button>
+                <ul id='enthead' style='display:none;'>
+                    <li>Allow - This entity header lists all the methods(i.e. GET, PUT, DELETE) that the user-agent is capable of using in a given resource. It is stated to inform the user of what methods is available for use. It is a must to include this header in a 405(Method Not Allowed) response statement.</li>
+                    <li>Content-encoding - This entity header field is used to specify to the browser what type of compressing method is used in the resource file. As some files are too large to be sent in their original media-type. This field indicates what type of encoding was applied to identify the decoding to be used in order to get the file extension specified by the media-type field. i.e. Content-Encoding: zip Content-Encoding: gzip</li>
+                    <li>Content-language - This entity header indicates the language used in the resource. This may also indicate what language the resource may be displayed in as a Content-Language entity header may have two or more values. The purpose of the header is to inform the user of what audience the entity is intended for. i.e. Content-Language: en, rus, fil;</li>
+                    <li>Content-length - This is used to indicate the full size of the entity body in decimal number of octets. Should the user use GET method to get a part of the resource the Content-Length would indicate the full size of the resource. The valid value for this entity header is 0 and above. i.e. Content-Length: 350;</li>
+                    <li>Content-location - This is provided by the server to supply the resource location or where the file was fetched from. A server should send the Entity header specially if the resource has multiple associations with it in varying locations because an entity may be accesible through a different URI. i.e. Content-Location: https://www.webtek.org/files/info.txt</li>
+                    <li>Content-MD5 - This header field may be generated by a server or client to serve as an integrity check for the resource body. To not defeat the purpose of the Message Integrity Check(MIC) only origin servers and clients are able to generate the tag. An example or one way of checking the integrity of the file is by the number of even or odd bytes in the resource body. If the sent resource byte changed from odd to even or vice-versa the resource is then requested again.</li>
+                    <li>Content-range - This entity header field specifies what part of the resource should be fetched by the browser. The user should specify the range to be fetched. To be able to execute the user must follow the correct syntax in specifying the range. i.e. Content-Range = bytes(specification) 500-1000(range)/2000(total);</li>
+                    <li>Content-type - This header field states what type of content was sent to the browser. This provides information to the browser on what type of file it is recieving for the browser to be able to render the file properly in its original format. i.e. Content-Type: text/html;</li>
+                    <li>Expires - This entity header field indicates the date and time at which the server response is considered stale. A response that is already expired has an Expires entity header field equal to the date header value. For a none expiring response the server sends an Expires entity header field with a value 1 year ahead of the current date/time. i.e. Expires: Mon, 19 Jun 2017 23:59:59 PT;</li>
+                    <li>Last Modified - This entity header field indicates the time and date the server thinks the resource was last modified. This is necessary in order for the browser to know if it needs to fetch the resource again due to an update or use the cached version of the resource to save the trouble of fetching the same file again. i.e. Last-Modified: Sun, 18 Jun 2017 08:59:15 PT</li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div class='statuscodes'>
+            <p class=''>HTTP STATUS CODES</p>
+            <ul>
+                <li>1xx: INFORMATIONAL </li>
+                <ul>
+                    <li>100: Continue</li>
+                    <li>101: Switching Protocols</li>
+                </ul>
+                <li>2xx: SUCCESS </li>
+                <ul>
+                    <li>200: OK</li>
+                    <li>201: Created</li>
+                    <li>202: Accepted</li>
+                    <li>203: Non-Authoritative Information</li>
+                    <li>204: No Content</li>
+                    <li>205: Reset Content</li>
+                    <li>206: Partial Content</li>
+                </ul>
+
+                <li>3xx: REDIRECTION </li>
+                <ul>
+                    <li>300: Multiple Choices - This status code corresponds to any set of representations each with its own specific location</li>
+                    <li>301: Moved Permanently - The resource has been moved to a different location and to a new permanent URI</li>
+                    <li>302: Found - The resource resides temporarily in a different URI. </li>
+                    <li>303: See Other - The resource can be found in a different URI but can only be retrieved using a GET method on said resource. This is like the 302 code only with a restriction.</li>
+                    <li>304: Not Modified - This status code will appear when the user accesses a resource and that it hasn’t been modified.</li>
+                    <li>305: Use Proxy - Only a given proxy will be allowed to access the resource.</li>
+                    <li>306: (UNUSED) -Reserved status code.</li>
+                    <li>307: Temporary Redirect - The resource is temporarily in a different URI since the original location might be altered or deleted.</li>
+                </ul>
+                <li>4xx: CLIENT ERROR </li>
+                <ul>
+                    <li>400: Bad Request - The server cannot process the request of the user due to a malformed syntax.</li>
+                    <li>401: Unauthorized - The user doesn’t have any right to access the said location without a valid authorization. </li>
+                    <li>402: Payment Required - The user need to pay a certain amount to gain access to the resource.</li>
+                    <li>403: Forbidden - Access to the resource isn’t possible even with the valid credentials of the user</li>
+                    <li>404: Not Found - The server cannot find any matching URI for the user on said request.</li>
+                    <li>405: Method Not Allowed - The specified method is not allowed by the resource.</li>
+                    <li>406: Not Acceptable - The resource is only capable of generating a response which have content characteristics not acceptable according to the accept headers.</li>
+                    <li>407: Proxy Authentication Required - Similar with the 401 status code but need the user to access a proxy to authenticate itself.</li>
+                    <li>408: Request Time-out - The user exceeded the maximum idle time of the resource.</li>
+                    <li>409: Conflict – There is a conflict with the current state of the resource being asked by the user.</li>
+                    <li>410: Gone - Resources are no longer available in the server. </li>
+                    <li>411: Length Required - Refused to accept a request without a defined content length.</li>
+                    <li>412: Precondition Failed - When the result is false then tested on the server.</li>
+                    <li>413: Request Entity Too Large - The request of the user is too large to handle by the server.</li>
+                </ul>
+                <li>5xx: SERVER ERROR </li>
+                <ul>
+                    <li>500: Internal Server Error – The server encounter a condition that prevents for fulfilling the request.</li>
+                    <li>501: Not Implemented – The server does not support/recognise the methods so it lacks to fullfill the request. </li>
+                    <li>502: Bad Gateway – Server received an invalid response from the upstream server that was accessed to attempt to fullfill the request. </li>
+                    <li>503: Service Unavailable – The server may be currently unavailable to handle the request because of the overloading or by having maintenance of the server temporarily.</li>
+                    <li>504: Gateway Timeout – The server did not receive a timely response from the upstream server specified by URI.</li>
+                    <li>505: HTTP Version Not Supported – The Server does not support or it may refuse to support of the HTTP version.</li>
+                    <li>506: Variant Also Negotiates – The variant resource is not a proper end point in the negotiation process.</li>
+                    <li>507: Insufficient Storage – This status code means the server is unable to store the data needed to complete the request.</li>
+                    <li>508: Loop Detected – It indicates that the server encountered an infinite loop while it is processing a request.</li>
+                    <li>509: Bandwidth Limit Exceeded – Server is unavailable temporarily due to the site owner reaching the bandwidth limit.</li>
+                    <li>510: Not Extended – Extension has not been met in the request, so the server send back all the information for the client for that extended request. </li>
+                    <li>511: Network Authentication Required – Client needs to authenticate in order to have network access. Other have used to control over the network like a used to require an agreement to terms of service before granting internet access.</li>
+                    <li>598: Network read timeout error – It is used by some HTTP proxies to signal a network read timeout. This status code is also not specified in any RFC. RFC is Remote Function Call that is a formal document from the internet engineering task force.</li>
+                    <li>599: Network connect timeout error – Also it’s not specified by any RFC. Also used by HTTP proxies to signal network connect timeout.</li>
+                </ul>
+            </ul>
+        </div>
+
+
+    </div>
+    <script>
+        function hideHeaders() {
+
+            var x = document.getElementById('httpmeshead');
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+
+        }
+
+        function hideMethods() {
+
+            var y = document.getElementById('httpmethods');
+            if (y.style.display === 'block') {
+                y.style.display = 'none';
+            } else {
+                y.style.display = 'block';
+            }
+
+        }
+
+        function hidegenHead() {
+
+            var z = document.getElementById('genhead');
+            if (z.style.display === 'block') {
+                z.style.display = 'none';
+            } else {
+                z.style.display = 'block';
+            }
+
+        }
+
+        function hidereqHead() {
+
+            var q = document.getElementById('reqhead');
+            if (q.style.display === 'block') {
+                q.style.display = 'none';
+            } else {
+                q.style.display = 'block';
+            }
+
+        }
+
+        function hideresHead() {
+
+            var w = document.getElementById('reshead');
+            if (w.style.display === 'block') {
+                w.style.display = 'none';
+            } else {
+                w.style.display = 'block';
+            }
+
+        }
+
+        function hideentHead() {
+
+            var e = document.getElementById('enthead');
+            if (e.style.display === 'block') {
+                e.style.display = 'none';
+            } else {
+                e.style.display = 'block';
+            }
+
+        }
+
+    </script>
+</body>
+<footer>
+</footer>
+
+</html>
