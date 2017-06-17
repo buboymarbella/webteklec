@@ -184,18 +184,18 @@
             <ul>
                 <li>1xx: INFORMATIONAL </li>
                 <ul>
-                    <li>100: Continue</li>
-                    <li>101: Switching Protocols</li>
+                    <li>100: Continue - Server has received the request headers. </li>
+                    <li>101: Switching Protocols - This status codes means that the requester is asking the server to switch protocols.</li>
                 </ul>
                 <li>2xx: SUCCESS </li>
                 <ul>
-                    <li>200: OK</li>
-                    <li>201: Created</li>
-                    <li>202: Accepted</li>
-                    <li>203: Non-Authoritative Information</li>
-                    <li>204: No Content</li>
-                    <li>205: Reset Content</li>
-                    <li>206: Partial Content</li>
+                    <li>200: OK - The request was successfully accepted.</li>
+                    <li>201: Created – The request was accepted and new resource was created.</li>
+                    <li>202: Accepted – The request is accepted but the process is not yet been completed.</li>
+                    <li>203: Non-Authoritative Information – The server successfully accepted and processed the request but the information that was return is from other source.</li>
+                    <li>204: No Content – The server has successfully fulfilled the request but it doesn’t return any information or content.</li>
+                    <li>205: Reset Content – It’s like 204 Status code, is successfully fulfilled the request but it doesn’t return any information or content but this response requires the requester to reset the content.</li>
+                    <li>206: Partial Content – The server is delivering resources due to the range header sent by the client.</li>
                 </ul>
 
                 <li>3xx: REDIRECTION </li>
