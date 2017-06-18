@@ -31,6 +31,7 @@
         
         #httpmethods,
         #httpmeshead,
+        #httpversion,
         #status {
             display: block;
             margin: auto;
@@ -51,7 +52,7 @@
             margin-bottom: 10px;
         }
         
-        li {
+        li, h2 {
             font-family: "Arial Narrow", Times, Monospace;
         }
         
@@ -88,12 +89,10 @@
             <h1>WEBTEK</h1>
         </div>
         <div class='http'>
-            <h2>HTTP</h2>
-
-
             <!--Francisco HTTP Description and Versions-->
             
-            
+            <div id='httpversion'>
+            <h2>HTTP</h2>
             <p> The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative </p>
             <p> and hypermedia information systems. HTTP is the protocol to exchange or transfer hypertext.  </p>
             
@@ -113,7 +112,7 @@
                      <li>HTTP/1.1: Authentication
                      <li>HTTP/2 was published as RFC 7540 in May 2015.
                   </ul>
-           
+           </div>
 
 
             <button class='meth' onclick="hideMethods()">HTTP Methods</button>
