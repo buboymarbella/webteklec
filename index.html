@@ -35,9 +35,15 @@
         #status {
             display: block;
             margin: auto;
-         
+        }
         
-
+        #httpmethods,
+        #httpmeshead,
+        #status {
+            background-color: dimgrey;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
         }
         
         h3 {
@@ -49,7 +55,8 @@
             margin-bottom: 10px;
         }
         
-        li, h2 {
+        li,
+        h2 {
             font-family: "Arial Narrow", Times, Monospace;
         }
         
@@ -74,7 +81,6 @@
             font-family: "Palatino Linotype";
             letter-spacing: 20px;
         }
-        
 
     </style>
 </head>
@@ -87,27 +93,27 @@
         </div>
         <div class='http'>
             <!--Francisco HTTP Description and Versions-->
-            
+
             <div id='httpversion'>
-            <h2>HTTP</h2>
-            <p> The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative </p>
-            <p> and hypermedia information systems. HTTP is the protocol to exchange or transfer hypertext.  </p>
-            
-            <p>Version of HTTP</p>
-                 <ul>
-                     <li>HTTP V0.9 - The first documented version of HTTP it has only one method the GET. (1991)</li>
-                     <li>HTTP V1.0 - The second version added additional methods and header field. (1996)</li>
-                     <li>Pre-Standard HTTP/1.1 - It was based on the developing RFC 2068</li>
-                     <li>The 6 updates HTTP/1.1</li>
-                     <li>HTTP/1.1: Message Syntax and Routing</li>
-                     <li>HTTP/1.1: Semantics and Content</li>
-                     <li> HTTP/1.1: Conditional Requests</li>
-                     <li>HTTP/1.1: Range Requests</li>
-                     <li>HTTP/1.1: Caching</li>
-                     <li>HTTP/1.1: Authentication</li>
-                     <li>HTTP/2 was published as RFC 7540 in May 2015.</li>
-                  </ul>
-           </div>
+                <h2>HTTP</h2>
+                <p> The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative </p>
+                <p> and hypermedia information systems. HTTP is the protocol to exchange or transfer hypertext. </p>
+
+                <p>Version of HTTP</p>
+                <ul>
+                    <li>HTTP V0.9 - The first documented version of HTTP it has only one method the GET. (1991)</li>
+                    <li>HTTP V1.0 - The second version added additional methods and header field. (1996)</li>
+                    <li>Pre-Standard HTTP/1.1 - It was based on the developing RFC 2068</li>
+                    <li>The 6 updates HTTP/1.1</li>
+                    <li>HTTP/1.1: Message Syntax and Routing</li>
+                    <li>HTTP/1.1: Semantics and Content</li>
+                    <li> HTTP/1.1: Conditional Requests</li>
+                    <li>HTTP/1.1: Range Requests</li>
+                    <li>HTTP/1.1: Caching</li>
+                    <li>HTTP/1.1: Authentication</li>
+                    <li>HTTP/2 was published as RFC 7540 in May 2015.</li>
+                </ul>
+            </div>
 
 
             <button class='meth' onclick="hideMethods()">HTTP Methods</button>
@@ -125,13 +131,13 @@
             </div>
             <button class='heads' onclick="hideHeaders()">Message Headers</button>
             <div id='httpmeshead' style='display: none;'>
-                
+
                 <h3> Message Headers </h3>
                 <ul>
                     <li>General - General header fields can be used by both the client and the server.</li>
                     <li>Request - Request header fields are client exclusive.</li>
-                    <li>Response -  Response header fields are server exclusive.</li>
-                    <li>Entity -  Entity header fields describe the payload of the request or response.</li>
+                    <li>Response - Response header fields are server exclusive.</li>
+                    <li>Entity - Entity header fields describe the payload of the request or response.</li>
                 </ul>
 
 
@@ -271,92 +277,92 @@
                         <li>598: Network read timeout error – It is used by some HTTP proxies to signal a network read timeout. This status code is also not specified in any RFC. RFC is Remote Function Call that is a formal document from the internet engineering task force.</li>
                         <li>599: Network connect timeout error – Also it’s not specified by any RFC. Also used by HTTP proxies to signal network connect timeout.</li>
                     </ul>
-                
+
                 </div>
 
 
             </div>
         </div>
     </div>
-        <script>
-            function hideHeaders() {
+    <script>
+        function hideHeaders() {
 
-                var x = document.getElementById('httpmeshead');
-                if (x.style.display === 'block') {
-                    x.style.display = 'none';
-                } else {
-                    x.style.display = 'block';
-                }
-
+            var x = document.getElementById('httpmeshead');
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
             }
 
-            function hideMethods() {
+        }
 
-                var y = document.getElementById('httpmethods');
-                if (y.style.display === 'block') {
-                    y.style.display = 'none';
-                } else {
-                    y.style.display = 'block';
-                }
+        function hideMethods() {
 
+            var y = document.getElementById('httpmethods');
+            if (y.style.display === 'block') {
+                y.style.display = 'none';
+            } else {
+                y.style.display = 'block';
             }
 
-            function hidegenHead() {
+        }
 
-                var z = document.getElementById('genhead');
-                if (z.style.display === 'block') {
-                    z.style.display = 'none';
-                } else {
-                    z.style.display = 'block';
-                }
+        function hidegenHead() {
 
+            var z = document.getElementById('genhead');
+            if (z.style.display === 'block') {
+                z.style.display = 'none';
+            } else {
+                z.style.display = 'block';
             }
 
-            function hidereqHead() {
+        }
 
-                var q = document.getElementById('reqhead');
-                if (q.style.display === 'block') {
-                    q.style.display = 'none';
-                } else {
-                    q.style.display = 'block';
-                }
+        function hidereqHead() {
 
+            var q = document.getElementById('reqhead');
+            if (q.style.display === 'block') {
+                q.style.display = 'none';
+            } else {
+                q.style.display = 'block';
             }
 
-            function hideresHead() {
+        }
 
-                var w = document.getElementById('reshead');
-                if (w.style.display === 'block') {
-                    w.style.display = 'none';
-                } else {
-                    w.style.display = 'block';
-                }
+        function hideresHead() {
 
+            var w = document.getElementById('reshead');
+            if (w.style.display === 'block') {
+                w.style.display = 'none';
+            } else {
+                w.style.display = 'block';
             }
 
-            function hideentHead() {
+        }
 
-                var e = document.getElementById('enthead');
-                if (e.style.display === 'block') {
-                    e.style.display = 'none';
-                } else {
-                    e.style.display = 'block';
-                }
+        function hideentHead() {
 
+            var e = document.getElementById('enthead');
+            if (e.style.display === 'block') {
+                e.style.display = 'none';
+            } else {
+                e.style.display = 'block';
             }
 
-            function hidestatHead() {
+        }
 
-                var d = document.getElementById('status');
-                if (d.style.display === 'block') {
-                    d.style.display = 'none';
-                } else {
-                    d.style.display = 'block';
-                }
+        function hidestatHead() {
 
+            var d = document.getElementById('status');
+            if (d.style.display === 'block') {
+                d.style.display = 'none';
+            } else {
+                d.style.display = 'block';
             }
 
-        </script>
+        }
+
+    </script>
 </body>
 
 
