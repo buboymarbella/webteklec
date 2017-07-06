@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Client Side</title>
+    <style>
+        
+    </style>
 </head>
 <body>
     
     <!--
     NOTE:
-    Ung mga names nilagyan ko ng span with ID=name para kung gusto nyo lagyan ng hover picture or pang bold lang nung name
-    Ung mga acronym definitions nilagyan ko span with ID=acro
+    --Ung mga names nilagyan ko ng span with ID=name para kung gusto nyo lagyan ng hover picture or pang bold lang nung name
+
+    --Ung mga acronym definitions nilagyan ko span with ID=acro
     para sana maibold or italic sa CSS
+    
+    --FOR CSS
+    ul id= lists
+    h1 id= mainheader
+    h2 id= subtopicheader
+    div class=htmlpart
+          class=csspart
+          class=jspart
     -->
     
     <div class="htmlpart">
-        <h1 id="header">HTML</h1>
+        <h1 id="mainheader">HTML</h1>
         <!--HTML PARTS-->
     </div>
     
@@ -48,12 +60,125 @@
         </ul>
         <br>
         <h2 id="subtopicheader">CSS Selectors</h2>
+        <p>In CSS in order to refer to an element that we want to style we need to indicate a selector. This can be done in different ways with different selectors.</p>
+        <table>
+          <tr>
+            <th>Selector</th>
+            <th>Syntax</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>p</td>
+            <td>Selects a specific element to style</td>
+          </tr>
+          <tr>
+            <td>class</td>
+            <td>.proj</td>
+            <td>Selects an element with a matching class attribute</td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>#proj</td>
+            <td>Selects an element with a matching id attribute</td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>*</td>
+            <td>Selects all elements</td>
+          </tr>
+        </table>
+        <br>
+        <h2 id="subtopicheader">CSS Combinators</h2>
+        <p>To further specify the element you want to style combinators offer a lot of variations in selecting an element.</p>
+        <table>
+          <tr>
+            <th>Combinators</th>
+            <th>Syntax</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Descendant Selector</td>
+            <td>A B</td>
+            <td>This combinator selects children of the first specified element even if not direct descendants</td>
+          </tr>
+          <tr>
+            <td>Child Selector</td>
+            <td>A &gt; B</td>
+            <td>The combinator selects children that are direct descendants of the first specified element</td>
+          </tr>
+          <tr>
+            <td>General Sibling Selector</td>
+            <td>A ~ B</td>
+            <td>This combinator selects the latter element that follows after the former element not necessarily immediately</td>
+          </tr>
+          <tr>
+            <td>Adjacent Sibling Selectors</td>
+            <td>A + B</td>
+            <td>This combinator selects the latter element that follows immediately after the former element</td>
+          </tr>
+        </table>
+        <br>
+        <h2>CSS Psuedo Elements</h2>
+        <p>A Psuedo element allows the user to style specific part of a selected element.Some of them are:</p>
+        <ul id="lists">
+        <li>::after - This will be placed after the element.</li>
+        <li>::before - This will be placed before the element.</li>
+        <li>::first-letter - Only applies to the first letter of the element.</li>
+        <li>::first-line - Only applies to the first line of the element.</li>
+        <li>::selection - Applies to a portion of a document highlighted by the user.</li>
+        </ul>
+        <br>
+        <h2>CSS Psuedo Classes</h2>
+        <p>A Psuedo class is a keyword added to a selector to indicate a special state of the selected element. Such as:</p>
+        <ul id="lists">
+            <li>:active</li>
+            <li>:any</li>
+            <li>:checked</li>
+            <li>:default</li>
+            <li>:dir()</li>
+            <li>:disabled</li>
+            <li>:empty</li>
+            <li>:enabled</li>
+            <li>:first</li>
+            <li>:first-child</li>
+            <li>:first-of-type</li>
+            <li>:fullscreen</li>
+            <li>:focus</li>
+            <li>:hover</li>
+            <li>:indeterminate</li>
+            <li>:in-range</li>
+            <li>:invalid</li>
+            <li>:lang()</li>
+            <li>:last-child</li>
+            <li>:last-of-type</li>
+            <li>:left</li>
+            <li>:link</li>
+            <li>:not()</li>
+            <li>:nth-child()</li>
+            <li>:nth-last-child()</li>
+            <li>:nth-last-of-type()</li>
+            <li>:nth-of-type()</li>
+            <li>:only-child</li>
+            <li>:only-of-type</li>
+            <li>:optional</li>
+            <li>:out-of-range</li>
+            <li>:read-only</li>
+            <li>:read-write</li>
+            <li>:required</li>
+            <li>:right</li>
+            <li>:root</li>
+            <li>:scope</li>
+            <li>:target</li>
+            <li>:valid</li>
+            <li>:visited</li>
+        </ul>
         
         
     </div>
     
     <div class="jspart">
-        <h1 id="header">JavaScript</h1>
+        <h1 id="mainheader">JavaScript</h1>
         <!--JS PARTS-->
     </div>
     
