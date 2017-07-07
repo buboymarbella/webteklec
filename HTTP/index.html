@@ -7,7 +7,8 @@
         body {
             background-image: url("bg.jpg");
         }
-        .http{
+        
+        .http {
             border-style: solid;
             border-width: thick;
             border-spacing: inherit;
@@ -97,20 +98,17 @@
             <h1>WEBTEK</h1>
         </div>
         <div class='http'>
-            
+
 
             <div id='httpversion'>
                 <h2>HTTP</h2>
-                <p> The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative 
-                and hypermedia information systems. HTTP is the protocol to exchange or transfer hypertext.</p>
-                
+                <p> The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative and hypermedia information systems. HTTP is the protocol to exchange or transfer hypertext.</p>
+
                 <h2>Tim Berners-Lee</h2>
-                    <p>Tim Berners-Lee made a proposal for an information management system in March 1989, 
-                       Tim Berners-Lee implemented the first successful communication between a Hypertext Transfer Protocol (HTTP)
-                       client and server via the Internet
-                    </p>
-                
-          
+                <p>Tim Berners-Lee made a proposal for an information management system in March 1989, Tim Berners-Lee implemented the first successful communication between a Hypertext Transfer Protocol (HTTP) client and server via the Internet
+                </p>
+
+
 
                 <h2>Version of HTTP</h2>
                 <ul>
@@ -296,92 +294,136 @@
 
             </div>
         </div>
-         <div class='html'>
+        <div class='html'>
         </div>
         <div class='css'>
         </div>
         <div class='js'>
+            <div id='httphisto'>
+                <h2>JavaScript</h2>
+                <p> Javascript is a scripting language for HTML created by Netscape. It can be used in cross-platform and cross-broswer, and it is a object based scripting language though JavaScript is not Java.</p>
+
+                <h2>History</h2>
+                <p>JavaScript have also been recognize as ECMAScript. JavaScript was invented by Brendan Eich which is an American technologist in May 1995. Javascript version 1.0 was implemented in older netscape versions which later implemented on the later version 3.0. JavaScript was originally implemented as a scripting language to HTML in Netscape Navigator and LiveWire.
+                </p>
+                <h2>Syntax</h2>
+                <p>The Syntax is similar to Java and C++. The imporant objects are WINDOW, DOCUMENT, DATE, FORM, NAVIGATOR and Events and EventHandlers are supported.</p>
+            </div>
+            <div id='whatcanjss '>
+                <button class='what' onclick="hidewhatCan()">What can I do with JavaScript?</button>
+                <ul id='whatcanjs' style='display:none;'>
+                    <li>Pop-up Windows - JavaScript has three kind of boxes, the Alert box, Confirm box and Prompt box. example code:<i> window.alert("sometext");</i></li>
+                    <li>Status Bars - Status Bars - are small message areas where you can see at the bottom of the browser. exaple code:
+                        <i>  function statwords(message) {
+                                window.status = message;
+                            }</i> Writing the value and the OnClick for the call of the message once the button is clicked the message will be seen.
+                        <i>  VALUE="Write a status bar message" OnClick="statwords('This is my message');"> </i>
+
+                    </li>
+                    <li>Rollovers - are handled by adding an onmouseover similar to the css' hover. example in-line code: <i> onmouseover="this.className='arrowOver'" onmouseout="this.className=''" Move your mouse over me  </i></li>
+                    <li>Form Verification - JS is an efficient way to validate inputs in web forms and prompts can be seen after being validated. example code: <i> function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}</i></li>
+                    <li>Dynamic Documents - it can be created while an HTML document is being displayed as a very useful technique to show documents in a creative way. example code: <i>document.write('Hello World, ');
+document.write('from DDC in Action.');</i>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <script>
-        function hideHeaders() {
+        <script>
+            function hideHeaders() {
 
-            var x = document.getElementById('httpmeshead');
-            if (x.style.display === 'block') {
-                x.style.display = 'none';
-            } else {
-                x.style.display = 'block';
+                var x = document.getElementById('httpmeshead');
+                if (x.style.display === 'block') {
+                    x.style.display = 'none';
+                } else {
+                    x.style.display = 'block';
+                }
+
             }
 
-        }
+            function hideMethods() {
 
-        function hideMethods() {
+                var y = document.getElementById('httpmethods');
+                if (y.style.display === 'block') {
+                    y.style.display = 'none';
+                } else {
+                    y.style.display = 'block';
+                }
 
-            var y = document.getElementById('httpmethods');
-            if (y.style.display === 'block') {
-                y.style.display = 'none';
-            } else {
-                y.style.display = 'block';
             }
 
-        }
+            function hidegenHead() {
 
-        function hidegenHead() {
+                var z = document.getElementById('genhead');
+                if (z.style.display === 'block') {
+                    z.style.display = 'none';
+                } else {
+                    z.style.display = 'block';
+                }
 
-            var z = document.getElementById('genhead');
-            if (z.style.display === 'block') {
-                z.style.display = 'none';
-            } else {
-                z.style.display = 'block';
             }
 
-        }
+            function hidereqHead() {
 
-        function hidereqHead() {
+                var q = document.getElementById('reqhead');
+                if (q.style.display === 'block') {
+                    q.style.display = 'none';
+                } else {
+                    q.style.display = 'block';
+                }
 
-            var q = document.getElementById('reqhead');
-            if (q.style.display === 'block') {
-                q.style.display = 'none';
-            } else {
-                q.style.display = 'block';
             }
 
-        }
+            function hideresHead() {
 
-        function hideresHead() {
+                var w = document.getElementById('reshead');
+                if (w.style.display === 'block') {
+                    w.style.display = 'none';
+                } else {
+                    w.style.display = 'block';
+                }
 
-            var w = document.getElementById('reshead');
-            if (w.style.display === 'block') {
-                w.style.display = 'none';
-            } else {
-                w.style.display = 'block';
             }
 
-        }
+            function hideentHead() {
 
-        function hideentHead() {
+                var e = document.getElementById('enthead');
+                if (e.style.display === 'block') {
+                    e.style.display = 'none';
+                } else {
+                    e.style.display = 'block';
+                }
 
-            var e = document.getElementById('enthead');
-            if (e.style.display === 'block') {
-                e.style.display = 'none';
-            } else {
-                e.style.display = 'block';
             }
 
-        }
+            function hidestatHead() {
 
-        function hidestatHead() {
+                var d = document.getElementById('status');
+                if (d.style.display === 'block') {
+                    d.style.display = 'none';
+                } else {
+                    d.style.display = 'block';
+                }
 
-            var d = document.getElementById('status');
-            if (d.style.display === 'block') {
-                d.style.display = 'none';
-            } else {
-                d.style.display = 'block';
             }
 
-        }
+            function hidewhatCan() {
 
-    </script>
+                var n = document.getElementById('whatcanjs');
+                if (n.style.display === 'block') {
+                    n.style.display = 'none';
+                } else {
+                    n.style.display = 'block';
+                }
+
+            }
+
+        </script>
 </body>
 
 
