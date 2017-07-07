@@ -45,7 +45,7 @@
         
         #httpmethods,
         #httpmeshead,
-        #status, #whatcanjs{
+        #status, #whatcanjs, #listahan{
             background-color: dimgrey;
             border-radius: 10px;
             padding: 20px;
@@ -693,6 +693,31 @@ document.write('from DDC in Action.');</i>
                     </li>
                 </ul>
             </div>
+                <h3>Sample Demo</h3>
+                <script> function alertButton () {
+                        alert("Hello!");
+                    }
+                
+            </script>
+            <p><i>function alertButton () {
+                        alert("Hello!");
+                    }
+                </i>
+            </p>
+            <button onclick="alertButton()">CLICK ME!!</button>
+            
+            <div id= 'listoffunc'>
+            <button class='list' onclick="hideList()">List of Functions</button>
+            <ul id='listahan' style='display:none;'>
+                <li>decodeURI() - Decodes a URI</li>
+                <li>decodeURIComponent() - Decodes a URI component</li>
+                <li>encodeURI()  - Encodes a URI </li>
+                <li>encodeURIComponent() - Encodes a URI component</li>
+                <li>escape() - Use encodeURI() or encodeURIComponent() instead</li>
+                <li>eval() - 	Evaluates and executes a string as if it was script code</li>
+                <li>Number() - Converts an object's value to a number</li>
+                <li>unescape() -  Use decodeURI() or decodeURIComponent() instead</li>
+                </ul></div>
         </div>
         <script>
             function hideHeaders() {
@@ -779,6 +804,16 @@ document.write('from DDC in Action.');</i>
                     n.style.display = 'none';
                 } else {
                     n.style.display = 'block';
+                }
+
+            }
+               function hideList() {
+
+                var a = document.getElementById('listahan');
+                if (a.style.display === 'block') {
+                    a.style.display = 'none';
+                } else {
+                    a.style.display = 'block';
                 }
 
             }
