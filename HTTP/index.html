@@ -298,7 +298,360 @@
         </div>
          <div class='html'>
         </div>
-        <div class='css'>
+        <div id="">
+            <h1>CSS</h1>
+            <h2>CSS History and Origin</h2>
+            <p>CSS or <span id="acro">cascading style sheets</span>span> is used for describing the presentation of an html document. Though CSS is not limited to only HTML documents it may also be applied to SVG, XML and XHTML docs.</p>
+            <p>CSS was proposed by <span id="name">Hakon Wium Lie</span> at around that time several proposals for style sheet languages was proposed. This led to the <span id="acro1">World Wide Web Consortium</span>'s first CSS Recommendation. As his proposal was influential <span id="name1">Bert Bos</span> became co-author of CSS1</p>
+            <br>
+            <h2>CSS Variations</h2>
+            <ul id="lists">
+                <li>CSS 1 - includes font properties, line spacing and text attributes, text colors, backgrounds and positioning options such as margin and paddings.</li>
+                <li>CSS 2 - added capabilities for positioning of elements such as relative, absolutes and Z - index. Media type concepts and font properties.</li>
+                <li>CSS 2.1 - This first revision of the CSS 2 moves forward by fixing errors and removing not fully supported features from the previous version.</li>
+                <li>CSS 3.0 - Preserves backwards compatibility. Now divided into modules. </li>
+            </ul>
+            <br>
+            <h2>CSS Preprocessors and Frameworks</h2>
+            <p>As CSS has been around for a long time several frameworks have been built to provide users with predefined set of keywords to use in their css documents. Such as:</p>
+            <ul id="lists2">
+                <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+                <li><a href="http://www.blueprintcss.org/">Blueprint</a></li>
+                <li><a href="http://foundation.zurb.com/">Foundation</a></li>
+            </ul>
+            <br>
+            <p>CSS is can be seen as an incomplete language. Editing CSS declarations and building a function can be a grueling and repetitive task. That is where Preprocessing CSS comes along. This pre-processors allow for the creation of Variable, Nesting,Mixins and Extensions. Although pre-processors have different syntax they are not too far apart. Here are some of CSS Preprocessors:</p>
+            <ul id="lists3">
+                <li><a href="http://sass-lang.com/">SASS</a></li>
+                <li><a href="http://lesscss.org/">LESS</a></li>
+                <li><a href="http://stylus-lang.com/">Stylus</a></li>
+            </ul>
+            <br>
+            <h2>CSS Selectors</h2>
+            <p>In CSS in order to refer to an element that we want to style we need to indicate a selector. This can be done in different ways with different selectors.</p>
+            <table>
+              <tr>
+                <th>Selector</th>
+                <th>Syntax</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>type</td>
+                <td>p</td>
+                <td>Selects a specific element to style</td>
+              </tr>
+              <tr>
+                <td>class</td>
+                <td>.proj</td>
+                <td>Selects an element with a matching class attribute</td>
+              </tr>
+              <tr>
+                <td>id</td>
+                <td>#proj</td>
+                <td>Selects an element with a matching id attribute</td>
+              </tr>
+              <tr>
+                <td>*</td>
+                <td>*</td>
+                <td>Selects all elements</td>
+              </tr>
+            </table>
+            <br>
+            <h2>CSS Combinators</h2>
+            <p>To further specify the element you want to style combinators offer a lot of variations in selecting an element.</p>
+            <table>
+              <tr>
+                <th>Combinators</th>
+                <th>Syntax</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>Descendant Selector</td>
+                <td>A B</td>
+                <td>This combinator selects children of the first specified element even if not direct descendants</td>
+              </tr>
+              <tr>
+                <td>Child Selector</td>
+                <td>A &gt; B</td>
+                <td>The combinator selects children that are direct descendants of the first specified element</td>
+              </tr>
+              <tr>
+                <td>General Sibling Selector</td>
+                <td>A ~ B</td>
+                <td>This combinator selects the latter element that follows after the former element not necessarily immediately</td>
+              </tr>
+              <tr>
+                <td>Adjacent Sibling Selectors</td>
+                <td>A + B</td>
+                <td>This combinator selects the latter element that follows immediately after the former element</td>
+              </tr>
+            </table>
+            <br>
+            <h2>CSS Psuedo Elements</h2>
+            <p>A Psuedo element allows the user to style specific part of a selected element.Some of them are:</p>
+            <ul>
+            <li>::after - This will be placed after the element.</li>
+            <li>::before - This will be placed before the element.</li>
+            <li>::first-letter - Only applies to the first letter of the element.</li>
+            <li>::first-line - Only applies to the first line of the element.</li>
+            <li>::selection - Applies to a portion of a document highlighted by the user.</li>
+            </ul>
+            <br>
+
+            <h2>CSS Psuedo Classes</h2>
+            <p>A Psuedo class is a keyword added to a selector to indicate a special state of the selected element. Such as:</p>
+            <ul>
+                <li>:active</li>
+                <li>:any</li>
+                <li>:checked</li>
+                <li>:default</li>
+                <li>:dir()</li>
+                <li>:disabled</li>
+                <li>:empty</li>
+                <li>:enabled</li>
+                <li>:first</li>
+                <li>:first-child</li>
+                <li>:first-of-type</li>
+                <li>:fullscreen</li>
+                <li>:focus</li>
+                <li>:hover</li>
+                <li>:indeterminate</li>
+                <li>:in-range</li>
+                <li>:invalid</li>
+                <li>:lang()</li>
+                <li>:last-child</li>
+                <li>:last-of-type</li>
+                <li>:left</li>
+                <li>:link</li>
+                <li>:not()</li>
+                <li>:nth-child()</li>
+                <li>:nth-last-child()</li>
+                <li>:nth-last-of-type()</li>
+                <li>:nth-of-type()</li>
+                <li>:only-child</li>
+                <li>:only-of-type</li>
+                <li>:optional</li>
+                <li>:out-of-range</li>
+                <li>:read-only</li>
+                <li>:read-write</li>
+                <li>:required</li>
+                <li>:right</li>
+                <li>:root</li>
+                <li>:scope</li>
+                <li>:target</li>
+                <li>:valid</li>
+                <li>:visited</li>
+            </ul>
+
+            <h2>CSS Propterties</h2>
+
+            <p>Color Properties</p>
+            <table>
+              <tr>
+                <th>Property</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>color</td>
+                <td>Sets the color of text</td>
+              </tr>
+              <tr>
+                <td>opacity</td>
+                <td>Sets the opacity of an element</td>
+              </tr>
+            </table>
+
+            <p>Background Properties and border properties</p>
+            <table>
+              <tr>
+                <th>Property</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>background</td>
+                <td>Set all the background properties in one declaration</td>
+              </tr>
+              <tr>
+                <td>background-color</td>
+                <td>Sets the background color of an element</td>
+              </tr>
+              <tr>
+                <td>background-image</td>
+                <td>Sets the background with image</td>
+              </tr>
+              <tr>
+                <td>background-repeat</td>
+                <td>Sets if the background will be repeated or not</td>
+              </tr>
+              <tr>
+                <td>border</td>
+                <td>Sets all the border properties in one declaration</td>
+              </tr>
+              <tr>
+                <td>border-color</td>
+                <td>Sets color of the borders</td>
+              </tr>
+              <tr>
+                <td>border-bottom</td>
+                <td>Sets the bottom border in one declaration</td>
+              </tr>
+              <tr>
+                <td>background-top</td>
+                <td>Sets the top border in one declaration</td>
+              </tr>
+              <tr>
+                <td>background-left</td>
+                <td>Sets the left border in one declaration</td>
+              </tr>
+              <tr>
+                <td>background-right</td>
+                <td>Sets the right border in one declaration</td>
+              </tr>
+              <tr>
+                <td>box-shadow</td>
+                <td>It attaches one or more dropshadows to the box</td>
+              </tr>
+            </table>
+
+            <p>Basic Box Properties</p>
+            <table>
+              <tr>
+                <th>Property</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>float</td>
+                <td>It sets the box wheter it should float or not</td>
+              </tr>
+              <tr>
+                <td>height</td>
+                <td>Sets the height of an element</td>
+              </tr>
+              <tr>
+                <td>margin</td>
+                <td>Sets the margin properties in one declaration</td>
+              </tr>
+              <tr>
+                <td>margin-bottom</td>
+                <td>Sets the bottom margin of an element</td>
+              </tr>
+              <tr>
+                <td>margin-left</td>
+                <td>Sets the left margin of an element</td>
+              </tr>
+              <tr>
+                <td>margin-right</td>
+                <td>Sets the right margin of an element</td>
+              </tr>
+              <tr>
+                <td>margin-top</td>
+                <td>Sets the top margin of an element</td>
+              </tr>
+              <tr>
+                <td>max-height</td>
+                <td>Sets the maximum height of an element</td>
+              </tr>
+              <tr>
+                <td>max-widtch</td>
+                <td>Sets the ,maximum width of an element</td>
+              </tr>
+              <tr>
+                <td>padding</td>
+                <td>Sets all the padding properties in one declaration</td>
+              </tr>
+              <tr>
+                <td>padding-bottom</td>
+                <td>Sets the bottom padding of an element</td>
+              </tr>
+              <tr>
+                <td>padding-left</td>
+                <td>Sets the left padding of an element</td>
+              </tr>
+              <tr>
+                <td>padding-right</td>
+                <td>sets the right padding of an element</td>
+              </tr>
+              <tr>
+                <td>padding-top</td>
+                <td>Sets the top padding of an element</td>
+              </tr>
+            </table>
+
+            <p>Text Properties</p>
+            <table>
+              <tr>
+                <th>Property</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>letter-spacing</td>
+                <td>Sets the spacing of a text wheter to increase or decrease the space between the characters.</td>
+              </tr>
+              <tr>
+                <td>line-height</td>
+                <td>Sets the line height of a text</td>
+              </tr>
+              <tr>
+                <td>text-align</td>
+                <td>It specifies the horizontal alignment of a text</td>
+              </tr>
+              <tr>
+                <td>text-indent</td>
+                <td>Specifies the indendation of a text</td>
+              </tr>
+              <tr>
+                <td>text-justify</td>
+                <td>Justifies the text</td>
+              </tr>
+              <tr>
+                <td>word-spacing</td>
+                <td>Sets the spacing of a words in a text whether to increase or to decrease</td>
+              </tr>
+            </table>
+
+            <p>Font Properties</p>
+            <table>
+              <tr>
+                <th>Property</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>font</td>
+                <td>Sets all font properties in one declaration</td>
+              </tr>
+              <tr>
+                <td>font-family</td>
+                <td>Sets the font family of a text</td>
+              </tr>
+              <tr>
+                <td>font-size</td>
+                <td>Sets the size of a font</td>
+              </tr>
+              <tr>
+                <td>font-style</td>
+                <td>Sets the styling of a text</td>
+              </tr>
+              <tr>
+                <td>font-weight</td>
+                <td>it specifies the weight of a font</td>
+              </tr>
+            </table>
+
+            <p>Table Properties</p>
+            <table>
+              <tr>
+                <th>Property</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>border-spacing</td>
+                <td>Specifies the distance between the borders of the cells</td>
+              </tr>
+              <tr>
+                <td>table-layout</td>
+                <td>Sets layout algorithgm of the table</td>
+              </tr>
+            </table>
         </div>
         <div class='js'>
         </div>
