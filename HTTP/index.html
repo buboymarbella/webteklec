@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>IT324: Web Systems and Technologies</title>
@@ -8,7 +8,9 @@
             background-image: url("bg.jpg");
         }
         
-        .http, .css, .js {
+        .http,
+        .css,
+        .js {
             border-style: solid;
             border-width: thick;
             border-spacing: inherit;
@@ -45,7 +47,9 @@
         
         #httpmethods,
         #httpmeshead,
-        #status, #whatcanjs{
+        #status,
+        #whatcanjs,
+        #listahan {
             background-color: dimgrey;
             border-radius: 10px;
             padding: 20px;
@@ -61,13 +65,13 @@
             margin-bottom: 10px;
         }
         
-       
         h2 {
             font-family: "Arial Narrow", Times, Monospace;
             letter-spacing: 5px;
             padding-left: 20px;
         }
         
+<<<<<<< HEAD
         p {
             font-family: "Arial Narrow", Times, Monospace;
             padding-left: 20px;
@@ -75,6 +79,13 @@
         
         li{
                font-family: "Arial Narrow", Times, Monospace;
+=======
+        li,
+        p,
+        td,
+        tr {
+            font-family: "Arial Narrow", Times, Monospace;
+>>>>>>> dbb275f10ae7a19cbef4ea54d0d5975543cb9874
         }
         
         .http,
@@ -101,6 +112,7 @@
             font-family: "Palatino Linotype";
             letter-spacing: 20px;
         }
+<<<<<<< HEAD
         
         a {
             text-decoration: none;
@@ -132,6 +144,8 @@
         }
         
 
+=======
+>>>>>>> dbb275f10ae7a19cbef4ea54d0d5975543cb9874
     </style>
 </head>
 
@@ -706,7 +720,7 @@
                 <h2>Syntax</h2>
                 <p>The Syntax is similar to Java and C++. The imporant objects are WINDOW, DOCUMENT, DATE, FORM, NAVIGATOR and Events and EventHandlers are supported.</p>
             </div>
-            <div id='whatcanjss '>
+            <div id='whatcanjss'>
                 <button class='what' onclick="hidewhatCan()">What can I do with JavaScript?</button>
                 <ul id='whatcanjs' style='display:none;'>
                     <li>Pop-up Windows - JavaScript has three kind of boxes, the Alert box, Confirm box and Prompt box. example code:<i> window.alert("sometext");</i></li>
@@ -730,98 +744,136 @@ document.write('from DDC in Action.');</i>
                     </li>
                 </ul>
             </div>
+            <h3>Sample Demo</h3>
+            <script>
+                function alertButton() {
+                    alert("Hello!");
+                }
+            </script>
+            <p><i>function alertButton () {
+                        alert("Hello!");
+                    }
+                </i>
+            </p>
+            <button onclick="alertButton()">CLICK ME!!</button>
+
+            <div id='listoffunc'>
+                <button class='list' onclick="hideList()">List of Functions</button>
+                <ul id='listahan' style='display:none;'>
+                    <li>decodeURI() - Decodes a URI</li>
+                    <li>decodeURIComponent() - Decodes a URI component</li>
+                    <li>encodeURI() - Encodes a URI </li>
+                    <li>encodeURIComponent() - Encodes a URI component</li>
+                    <li>escape() - Use encodeURI() or encodeURIComponent() instead</li>
+                    <li>eval() - Evaluates and executes a string as if it was script code</li>
+                    <li>Number() - Converts an object's value to a number</li>
+                    <li>unescape() - Use decodeURI() or decodeURIComponent() instead</li>
+                </ul>
+            </div>
         </div>
-        <script>
-            function hideHeaders() {
+    </div>
 
-                var x = document.getElementById('httpmeshead');
-                if (x.style.display === 'block') {
-                    x.style.display = 'none';
-                } else {
-                    x.style.display = 'block';
-                }
 
+    <script>
+        function hideHeaders() {
+
+            var x = document.getElementById('httpmeshead');
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
             }
 
-            function hideMethods() {
+        }
 
-                var y = document.getElementById('httpmethods');
-                if (y.style.display === 'block') {
-                    y.style.display = 'none';
-                } else {
-                    y.style.display = 'block';
-                }
+        function hideMethods() {
 
+            var y = document.getElementById('httpmethods');
+            if (y.style.display === 'block') {
+                y.style.display = 'none';
+            } else {
+                y.style.display = 'block';
             }
 
-            function hidegenHead() {
+        }
 
-                var z = document.getElementById('genhead');
-                if (z.style.display === 'block') {
-                    z.style.display = 'none';
-                } else {
-                    z.style.display = 'block';
-                }
+        function hidegenHead() {
 
+            var z = document.getElementById('genhead');
+            if (z.style.display === 'block') {
+                z.style.display = 'none';
+            } else {
+                z.style.display = 'block';
             }
 
-            function hidereqHead() {
+        }
 
-                var q = document.getElementById('reqhead');
-                if (q.style.display === 'block') {
-                    q.style.display = 'none';
-                } else {
-                    q.style.display = 'block';
-                }
+        function hidereqHead() {
 
+            var q = document.getElementById('reqhead');
+            if (q.style.display === 'block') {
+                q.style.display = 'none';
+            } else {
+                q.style.display = 'block';
             }
 
-            function hideresHead() {
+        }
 
-                var w = document.getElementById('reshead');
-                if (w.style.display === 'block') {
-                    w.style.display = 'none';
-                } else {
-                    w.style.display = 'block';
-                }
+        function hideresHead() {
 
+            var w = document.getElementById('reshead');
+            if (w.style.display === 'block') {
+                w.style.display = 'none';
+            } else {
+                w.style.display = 'block';
             }
 
-            function hideentHead() {
+        }
 
-                var e = document.getElementById('enthead');
-                if (e.style.display === 'block') {
-                    e.style.display = 'none';
-                } else {
-                    e.style.display = 'block';
-                }
+        function hideentHead() {
 
+            var e = document.getElementById('enthead');
+            if (e.style.display === 'block') {
+                e.style.display = 'none';
+            } else {
+                e.style.display = 'block';
             }
 
-            function hidestatHead() {
+        }
 
-                var d = document.getElementById('status');
-                if (d.style.display === 'block') {
-                    d.style.display = 'none';
-                } else {
-                    d.style.display = 'block';
-                }
+        function hidestatHead() {
 
+            var d = document.getElementById('status');
+            if (d.style.display === 'block') {
+                d.style.display = 'none';
+            } else {
+                d.style.display = 'block';
             }
 
-            function hidewhatCan() {
+        }
 
-                var n = document.getElementById('whatcanjs');
-                if (n.style.display === 'block') {
-                    n.style.display = 'none';
-                } else {
-                    n.style.display = 'block';
-                }
+        function hidewhatCan() {
 
+            var n = document.getElementById('whatcanjs');
+            if (n.style.display === 'block') {
+                n.style.display = 'none';
+            } else {
+                n.style.display = 'block';
             }
 
-        </script>
+        }
+
+        function hideList() {
+
+            var a = document.getElementById('listahan');
+            if (a.style.display === 'block') {
+                a.style.display = 'none';
+            } else {
+                a.style.display = 'block';
+            }
+
+        }
+    </script>
 </body>
-
 
 </html>
