@@ -65,7 +65,14 @@
         h2 {
             font-family: "Arial Narrow", Times, Monospace;
             letter-spacing: 5px;
+            padding-left: 20px;
         }
+        
+        p {
+            font-family: "Arial Narrow", Times, Monospace;
+            padding-left: 20px;
+        }
+        
         li{
                font-family: "Arial Narrow", Times, Monospace;
         }
@@ -94,6 +101,36 @@
             font-family: "Palatino Linotype";
             letter-spacing: 20px;
         }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: dimgrey;
+        }
+        
+        a:visited {
+            color: black;
+        }
+        
+        table {
+            font-family: "Arial Narrow", Times, Monospace;
+            margin: auto;
+        }
+        
+        td {
+           padding: 5px; 
+        }
+        
+        tr {
+            background-color: darkgrey;
+        }
+        
+        #tablehead {
+            background-color: dimgrey;
+        }
+        
 
     </style>
 </head>
@@ -310,7 +347,7 @@
             <p>CSS was proposed by <span id="name">Hakon Wium Lie</span> at around that time several proposals for style sheet languages was proposed. This led to the <span id="acro1">World Wide Web Consortium</span>'s first CSS Recommendation. As his proposal was influential <span id="name1">Bert Bos</span> became co-author of CSS1</p>
             <br>
             <h2>CSS Variations</h2>
-            <ul id="lists">
+            <ul>
                 <li>CSS 1 - includes font properties, line spacing and text attributes, text colors, backgrounds and positioning options such as margin and paddings.</li>
                 <li>CSS 2 - added capabilities for positioning of elements such as relative, absolutes and Z - index. Media type concepts and font properties.</li>
                 <li>CSS 2.1 - This first revision of the CSS 2 moves forward by fixing errors and removing not fully supported features from the previous version.</li>
@@ -326,7 +363,7 @@
             </ul>
             <br>
             <p>CSS is can be seen as an incomplete language. Editing CSS declarations and building a function can be a grueling and repetitive task. That is where Preprocessing CSS comes along. This pre-processors allow for the creation of Variable, Nesting,Mixins and Extensions. Although pre-processors have different syntax they are not too far apart. Here are some of CSS Preprocessors:</p>
-            <ul id="lists3">
+            <ul>
                 <li><a href="http://sass-lang.com/">SASS</a></li>
                 <li><a href="http://lesscss.org/">LESS</a></li>
                 <li><a href="http://stylus-lang.com/">Stylus</a></li>
@@ -335,7 +372,7 @@
             <h2>CSS Selectors</h2>
             <p>In CSS in order to refer to an element that we want to style we need to indicate a selector. This can be done in different ways with different selectors.</p>
             <table>
-                <tr>
+                <tr id="tablehead">
                     <th>Selector</th>
                     <th>Syntax</th>
                     <th>Description</th>
@@ -365,7 +402,7 @@
             <h2>CSS Combinators</h2>
             <p>To further specify the element you want to style combinators offer a lot of variations in selecting an element.</p>
             <table>
-                <tr>
+                <tr id="tablehead">
                     <th>Combinators</th>
                     <th>Syntax</th>
                     <th>Description</th>
@@ -394,7 +431,7 @@
             <br>
             <h2>CSS Psuedo Elements</h2>
             <p>A Psuedo element allows the user to style specific part of a selected element.Some of them are:</p>
-            <ul>
+            <ul id="psuedoelem">
                 <li>::after - This will be placed after the element.</li>
                 <li>::before - This will be placed before the element.</li>
                 <li>::first-letter - Only applies to the first letter of the element.</li>
@@ -405,7 +442,7 @@
 
             <h2>CSS Psuedo Classes</h2>
             <p>A Psuedo class is a keyword added to a selector to indicate a special state of the selected element. Such as:</p>
-            <ul>
+            <ul id="psuedoclass">
                 <li>:active</li>
                 <li>:any</li>
                 <li>:checked</li>
@@ -448,11 +485,11 @@
                 <li>:visited</li>
             </ul>
 
-            <h2>CSS Propterties</h2>
+            <h2>CSS Properties</h2>
 
-            <p>Color Properties</p>
+            <h3>Color Properties</h3>
             <table>
-                <tr>
+                <tr id="tablehead">
                     <th>Property</th>
                     <th>Description</th>
                 </tr>
@@ -466,9 +503,9 @@
                 </tr>
             </table>
 
-            <p>Background Properties and border properties</p>
+            <h2>Background Properties and border properties</h2>
             <table>
-                <tr>
+                <tr id="tablehead">
                     <th>Property</th>
                     <th>Description</th>
                 </tr>
@@ -518,9 +555,9 @@
                 </tr>
             </table>
 
-            <p>Basic Box Properties</p>
+            <h2>Basic Box Properties</h2>
             <table>
-                <tr>
+                <tr id="tablehead">
                     <th>Property</th>
                     <th>Description</th>
                 </tr>
@@ -582,9 +619,9 @@
                 </tr>
             </table>
 
-            <p>Text Properties</p>
+            <h2>Text Properties</h2>
             <table>
-                <tr>
+                <tr id="tablehead">
                     <th>Property</th>
                     <th>Description</th>
                 </tr>
@@ -614,9 +651,9 @@
                 </tr>
             </table>
 
-            <p>Font Properties</p>
+            <h2>Font Properties</h2>
             <table>
-                <tr>
+                <tr id="tablehead">
                     <th>Property</th>
                     <th>Description</th>
                 </tr>
@@ -642,9 +679,9 @@
                 </tr>
             </table>
 
-            <p>Table Properties</p>
+            <h2>Table Properties</h2>
             <table>
-                <tr>
+                <tr id="tablehead">
                     <th>Property</th>
                     <th>Description</th>
                 </tr>
