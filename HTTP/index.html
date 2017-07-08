@@ -10,10 +10,12 @@
         
         .http,
         .css,
+        .html,
         .js {
             border-style: solid;
             border-width: thick;
             border-spacing: inherit;
+            margin: 50px;
         }
         
         button {
@@ -40,6 +42,7 @@
         #httpmethods,
         #httpmeshead,
         #httpversion,
+        #maintopic,
         #status {
             display: block;
             margin: auto;
@@ -78,13 +81,6 @@
         p {
             font-family: "Arial Narrow", Times, Monospace;
             padding-left: 20px;
-        }
-        
-        .http,
-        .js,
-        .html,
-        .css {
-            margin: 50px;
         }
         
         #bodie {
@@ -340,9 +336,402 @@
 
             </div>
         </div>
-        <div class='html'>
+        <button class='topic' onclick="hidemaintopic()">HTML</button>
+        <div id="maintopic" class='html' style="display:none;">
+         <h2>HTML</h2>
+        
+	     <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It describes and defines the content of a webpage. Other technologies besides HTML are generally used to describe a webpage's appearance/presentation (CSS) or functionality (JavaScript). HTML is a markup language (not a programming language) that is used to create structured documents (i.e. web pages) in the World Wide Web. It was introduced by the rules of Standard Generalized Markup Language (SGML) in document type definition (DTD), by Tim-Berners-Lee in the year 1991. Creates structured documents by denoting semantics for text like headings, lists, links, quotes etc.</p>
+	    <hr>
+              <h2 id="html-versions">HTML Versions</h2>
+            
+                <div class="row">
+                    <table class="table-fill table-bordered">
+                       <thead>
+                            <tr  id="tablehead">
+                            <th class="text-left">Version</th>
+                            <th class="text-center">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-hover">
+                            <tr>
+                                <td class="text-center">HTML 1.0</td>
+                                <td class="text-left">HTML 1.0 was the first release of HTML to the world. Not many people were involved in website creation at the time, and the language was very limiting. There really wasn’t much you could do with it bar getting some simple text onto the web. But then, just that got the beardos a-foamin’ back in the day.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">HTML 2.0</td>
+                                <td class="text-left">HTML 2.0 included everything from the original 1.0 specifications but added a few new features to the mix. HTML 2.0 was the standard for website design until January 1997 and defined many core HTML features for the first time.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">HTML 3.0</td>
+                                <td class="text-left">It included many new and improved abilities for HTML, and promised far more powerful opportunities for webmasters to design their pages. Sadly, the browsers were awfully slow in implementing any of the new improvements, only adding in a few and leaving out the rest. Partly, this failure can be attributed to the size of the overhaul and so the HTML 3.0 spec was abandoned.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">HTML 3.2</td>
+                                <td class="text-left">This was a toned-down change to the existing standards, leaving many of the big steps forward for later versions. Most of the extensions tags that had been introduced by Netscape (and to a lesser-extent, Microsoft) did not make it into these new standards. It soon caught on and became the official standard in January ’97, and today practically all browsers support it fully.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">HTML 4.0</td>
+                                <td class="text-left">Extends HTML with mechanisms for style sheets, scripting, frames, embedding objects, improved support for right to left and mixed direction text, richer tables, and enhancements to forms, offering improved accessibility for people with disabilities.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">HTML 4.01</td>
+                                <td class="text-left">This version is strict, transitional and uses frameset.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">HTML 5</td>
+                                <td class="text-left">Is the fifth and current version of the HTML standard.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">HTML 5.1</td>
+                                <td class="text-left">Is the first minor revision of HTML 5 and is currently under Proposed Recommendation since September 2016.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 <hr>        
+                    <div class ="page-header">
+                        <h2 id="htmlvsxhtml">HTML VS. XHTML</h2>
+                         <p>HTML and XHTML are quite related to each other but here are their possible differences.</p>
+                    </div>
+                        <br>
+                    <div class ="row1">
+                    <table class="table-fill table-bordered">
+                       <thead>
+                            <tr  id="tablehead">
+                            <th class="text-left">HTML</th>
+                            <th class="text-left">XHTML</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-hover">
+                            <tr>
+                                <td class="text-left">Start or end tags are not required for every element.</td>
+                                <td class="text-left">All elements must have a start tag.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Tags and attributes are case-insensitive.</td>
+                                <td class="text-left">Elements and attributes are case sensitive, it is mostly in lowercase.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Attribues do not need to be quoted.</td>
+                                <td class="text-left">Attribute values must be enclosed in quotes.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">The document must include an HTML5 DOCTYPE.</td>
+                                <td class="text-left">XHTML documents must be well-formed.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">All the content can be put under the body element.</td>
+                                <td class="text-left">All elements are nested properly.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+		          </div>
+	    <!-- elements1 start-->
+			<div class="row2">
+		<h2 id="html-elements">HTML Elements</h2>
+                  <table class="table-fill table-bordered">
+                
+
+                 <thead>
+                            <tr  id="tablehead">
+                            <th class="text-left">Elements</th>
+                            <th class="text-center">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-hover">
+                            <tr>
+                                <td class="text-center"> p </td>
+                                <td class="text-left">Creates a paragraph, perhaps the most common block level element.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">h1, h2, h3, h4, h5, h6</td>
+                                <td class="text-left">Section headings at different levels. </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">dl</td>
+                                <td class="text-left">A description list (a.k.a. association list), which consists of name–value groups, and was known as a definition list prior to HTML5. Description lists are intended for groups of "terms and definitions, metadata topics and values, questions and answers, or any other groups of name–value data".</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">dt</td>
+                                <td class="text-left">A name in a description list (previously definition term in a definition list).</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">dd</td>
+                                <td class="text-left">A value in a description list (previously definition data in a definition list).</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">ol</td>
+                                <td class="text-left">An ordered (enumerated) list. The type attribute can be used to specify the kind of marker to use in the list, but style sheets give more control.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">ul</td>
+                                <td class="text-left">An unordered (bulleted) list. </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">li</td>
+                                <td class="text-left">A list item in ordered (ol) or unordered (ul) lists.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">dir</td>
+                                <td class="text-left">A directory listing. The original purpose of this element was never widely supported; deprecated in favor of ul</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+		<!-- elements1 end-->
+				
+		<!--element2 start-->
+				<hr>
+                  <div class="row3">
+		<h3 id="html-elements1">Other Block Elements</h3>
+                  <table class="table-fill table-bordered">
+               
+
+                 <thead>
+                            <tr  id="tablehead">
+                            <th class="text-left">Elements</th>
+                            <th class="text-center">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-hover">
+                            <tr>
+                                <td class="text-center"> address </td>
+                                <td class="text-left">Contact information for the document author.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">blockqoute</td>
+                                <td class="text-left">A block level quotation, for when the quotation includes block level elements, e.g. paragraphs.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">center</td>
+                                <td class="text-left">Creates a block-level center-aligned division.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">del</td>
+                                <td class="text-left">Marks a deleted section of content. This element can also be used as inline</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">div</td>
+                                <td class="text-left">A block-level logical division. A generic element with no semantic meaning used to distinguish a document section, usually for purposes such as presentation or behaviour controlled by style sheets or DOM calls.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">hr</td>
+                                <td class="text-left">A horizontal rule. Presentational rules can also be drawn with style sheets.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">ins</td>
+                                <td class="text-left">Marks a section of inserted content. This element can also be used as inline.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">noscript</td>
+                                <td class="text-left">Replacement content for scripts. Unlike script this can only be used as a block-level element.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">pre</td>
+                                <td class="text-left">Pre-formatted text. Text within this element is typically displayed in a non-proportional font exactly as it is laid out in the file </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">script</td>
+                                <td class="text-left">Places a script in the document. Also usable in the head and in inline contexts.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+		<!--element2 end -->
+		<!--element3 start-->
+				<hr>
+                  <div class="row4">
+		<h3 id="html-elements2">Inline Elements</h3>	  
+                  <table class="table-fill table-bordered">
+                
+
+                 <thead>
+                            <tr  id="tablehead">
+                            <th class="text-left">Elements</th>
+                            <th class="text-center">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-hover">
+                            <tr>
+                                <td class="text-center"> a </td>
+                                <td class="text-left">An anchor element is called an anchor because web designers can use it to anchor a URL to some text on a web page. When users view the web page in a browser, they can click the text to activate the link and visit the page whose URL is in the link</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">Phrase Element</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">abbr</td>
+                                <td class="text-left">Marks an abbreviation, and can make the full form available:</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">dfn</td>
+                                <td class="text-left">inline definition of a single term</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">em</td>
+                                <td class="text-left">Emphasis (conventionally displayed in italics)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">strong</td>
+                                <td class="text-left">strong emphasis (conventionally displayed bold).</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">Computer Phrase Element</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">code</td>
+                                <td class="text-left">A code snippet (code example). Conventionally rendered in a mono-space font.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">kbd</td>
+                                <td class="text-left">Keyboard - text to be entered by the user.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">samp</td>
+                                <td class="text-left">Sample output - from a program or script</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">var</td>
+                                <td class="text-left">Variable</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">Presentation </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">b</td>
+                                <td class="text-left"> set font to boldface</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">i</td>
+                                <td class="text-left">set font to italic</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">u</td>
+                                <td class="text-left">underline the text</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">small</td>
+                                <td class="text-left">decrease the font size</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">s</td>
+                                <td class="text-left">indicated strike-through text</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">strike</td>
+                                <td class="text-left">Strike-through text</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">font</td>
+                                <td class="text-left">typeface</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">span</td>
+                                <td class="text-left">An inline logical division. A generic element with no semantic meaning used to distinguish a document section, usually for purposes such as presentation or behaviour controlled by style sheets or DOM calls.</td>
+                            </tr>
+				<tr>
+                                <td class="text-center">Other Inline element</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">br</td>
+                                <td class="text-left">A forced line break.</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">font</td>
+                                <td class="text-left">typeface</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">bdi</td>
+                                <td class="text-left">Isolates an inline section of text that may be formatted in a different direction from other text outside of it, such as user-generated content with unknown directionality.</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">bdo</td>
+                                <td class="text-left">Marks an inline section of text in which the reading direction is the opposite from that of the parent element.</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">cite</td>
+                                <td class="text-left">A citation or a reference for a quote or statement in the document.</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">data</td>
+                                <td class="text-left">Links inline content with a machine-readable translation.</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">del</td>
+                                <td class="text-left">Delete text</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">ins</td>
+                                <td class="text-left">Insert text</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">mark</td>
+                                <td class="text-left"> Intended for highlighting relevant text in a quotation</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">a</td>
+                                <td class="text-left">An inline quotation </td>
+                            </tr>
+							<tr>
+                                <td class="text-center">font</td>
+                                <td class="text-left">typeface</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">sub</td>
+                                <td class="text-left">Subscript</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">sup</td>
+                                <td class="text-left">Superscript</td>
+                            </tr>
+							<tr>
+                                <td class="text-center">time</td>
+                                <td class="text-left">Represents a time on the 24-hour clock or a date on the Gregorian calendar, optionally with time and timezone information.</td>
+                            </tr>	
+                        </tbody>
+                    </table>
+                    </div>
+		<!--element3 end-->
+		<hr>
+                  <div class="row5">
+		<h3 id="html-elements5">Images and Objects</h3>	  
+                  <table class="table-fill table-bordered">
+                
+
+                 <thead>
+                            <tr  id="tablehead">
+                            <th class="text-left">Elements</th>
+                            <th class="text-center">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-hover">
+                            <tr>
+                                <td class="text-center"> area </td>
+                                <td class="text-left">An anchor element is called an anchor because web designers can use it to anchor a URL to some text on a web page. When users view the web page in a browser, they can click the text to activate the link and visit the page whose URL is in the link</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">img</td>
+                                <td class="text-left">Marks an abbreviation, and can make the full form available:</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">map</td>
+                                <td class="text-left">inline definition of a single term</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">obj</td>
+                                <td class="text-left">Emphasis (conventionally displayed in italics)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">param</td>
+                                <td class="text-left">strong emphasis (conventionally displayed bold).</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+				</div>
+                </div>
         </div>
-        <div class='css'>
+        <button class='topic' onclick="hidemaintopic2()">CSS</button>
+        <div id="maintopic2" class='css'  style="display:none;">
             <h2>CSS</h2>
             <h2>CSS History and Origin</h2>
             <p>CSS or <span id="acro">cascading style sheets</span>span> is used for describing the presentation of an html document. Though CSS is not limited to only HTML documents it may also be applied to SVG, XML and XHTML docs.</p>
@@ -697,7 +1086,8 @@
                 </tr>
             </table>
         </div>
-        <div class='js'>
+        <button class='topic' onclick="hidemaintopic3()">JavaScript</button>
+        <div id="maintopic3" class='js' style="display:none;">
             <div id='httphisto'>
                 <h2>JavaScript</h2>
                 <p> Javascript is a scripting language for HTML created by Netscape. It can be used in cross-platform and cross-broswer, and it is a object based scripting language though JavaScript is not Java.</p>
@@ -858,6 +1248,39 @@ document.write('from DDC in Action.');</i>
                 a.style.display = 'none';
             } else {
                 a.style.display = 'block';
+            }
+
+        }
+        
+                function hidemaintopic() {
+
+            var z = document.getElementById('maintopic');
+            if (z.style.display === 'block') {
+                z.style.display = 'none';
+            } else {
+                z.style.display = 'block';
+            }
+
+        }
+        
+                 function hidemaintopic2() {
+
+            var z = document.getElementById('maintopic2');
+            if (z.style.display === 'block') {
+                z.style.display = 'none';
+            } else {
+                z.style.display = 'block';
+            }
+
+        }
+        
+                 function hidemaintopic3() {
+
+            var z = document.getElementById('maintopic3');
+            if (z.style.display === 'block') {
+                z.style.display = 'none';
+            } else {
+                z.style.display = 'block';
             }
 
         }
