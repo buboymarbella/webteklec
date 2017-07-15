@@ -11,7 +11,9 @@
         .http,
         .css,
         .html,
-        .js {
+        .js,
+        .php,
+        .types{
             border-style: solid;
             border-width: thick;
             border-spacing: inherit;
@@ -1167,6 +1169,36 @@ document.write('from DDC in Action.');</i>
                 </ul>
             </div>
         </div>
+        <div class='serverside'>
+            <h2>SERVER SIDE SCRIPTING</h2>
+             <button class='topic' onclick="hidemaintopic4()">PHP</button>
+            <div id="maintopic4" class='php' style="display:none;">
+                <h2>PHP</h2>
+                <p>PHP is a recursive acronym for PHP:Hypertext Preprocessor, it is one of the most used
+                    open source scripting language for web development.</p>
+                <h2>PHP Syntax</h2>
+                <p>same to html, it has an opening and closing tags which tells
+PHP to begin or stop the interpretation of the code between those tags.
+                </p>
+            <div id="phptypes">
+                <h2>Types</h2>
+                    <p>Booleans - boolean expresses where the statement is true or false and it the simplest type.</p>
+                    <p>Integers - is a set of numbers that are specified in decimal, hexadecimal, octal, or binary.</p>
+                    <p>Floating point numbers - also known as real numbers or doubles that are specified depending on the syntaxes.</p>
+                    <p>Strings - are characters where these characters is similar to a byte meaning that PHP supports a character set , the 256 character set.</p>
+                    <p>Arrays - an array in PHP is an ordered map. A type that associates values to keys optimizied
+for different uses; as a list, hash table dictionary,stack, queue and etc. </p>
+                    <p>Iterables - is a pseudo-type and accepts any object or array implementing the Traversable
+interface.</p>
+        </div>
+                <div id="functions">
+                <h2>Functions</h2>
+                <p>User-define functions - a function that defined using the syntax below.</p>
+                <p>Variable functions - if a variable name has parentheses, php will search
+for the function that has the same name and will execute that function.</p>
+                <p></p>
+                <p></p>
+                </div>
     </div>
 
 
@@ -1302,6 +1334,27 @@ document.write('from DDC in Action.');</i>
             }
 
         }
+           
+        function hidemaintopic4() {
+
+            var p = document.getElementById('maintopic4');
+            if (p.style.display === 'block') {
+                p.style.display = 'none';
+            } else {
+                p.style.display = 'block';
+            }
+
+        }
+        function hideTypes() {
+
+            var o = document.getElementById('types');
+            if (o.style.display === 'block') {
+                o.style.display = 'none';
+            } else {
+                o.style.display = 'block';
+            }
+
+        }
 
         function hidehtmlversions() {
 
@@ -1313,6 +1366,8 @@ document.write('from DDC in Action.');</i>
             }
 
         }
+           
+
 
     </script>
 </body>
