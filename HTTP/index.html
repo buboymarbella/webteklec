@@ -13,7 +13,7 @@
         .html,
         .js,
         .php,
-        .types{
+        .types {
             border-style: solid;
             border-width: thick;
             border-spacing: inherit;
@@ -139,11 +139,18 @@
         .row5 {
             margin: 20px;
         }
-        h3{
+        
+        h3 {
             margin: 40px;
         }
-        button{
+        
+        button {
             margin-left: 50px;
+        }
+        
+        #maintopic5 {
+            margin: 20px;
+            border: solid;
         }
 
     </style>
@@ -1177,343 +1184,357 @@ document.write('from DDC in Action.');</i>
         </div>
         <div class='serverside'>
             <h2>SERVER SIDE SCRIPTING</h2>
-             <button class='topic' onclick="hidemaintopic4()">PHP</button>
+            <button class='topic' onclick="hidemaintopic4()">PHP</button>
             <div id="maintopic4" class='php' style="display:none;">
                 <h2>PHP</h2>
-                <p>PHP is a recursive acronym for PHP:Hypertext Preprocessor, it is one of the most used
-                    open source scripting language for web development.</p>
+                <p>PHP is a recursive acronym for PHP:Hypertext Preprocessor, it is one of the most used open source scripting language for web development.</p>
                 <h3>History</h3>
-                <p style="margin:30px;">PHP was written in the popular C programming language by <b><i>Rasmus Lerdorf</i></b> in <b>1994</b> for the use in viewing his personal resume and information and for that reason its purpose was mainly for a personal webpage. Then PHP 2.0 was developed on <b>June 8, 1995</b>. In <b>1998</b> PHP 3 was released which was the first mostly used version. <b>2000</b> for PHP 4 comes with the updates of security and for PHP 5 in <b>2004</b> with the updated Zend Engine 2.0. Then later came PHP 6 which has been in development since October 2006. 
+                <p style="margin:30px;">PHP was written in the popular C programming language by <b><i>Rasmus Lerdorf</i></b> in <b>1994</b> for the use in viewing his personal resume and information and for that reason its purpose was mainly for a personal webpage. Then PHP 2.0 was developed on <b>June 8, 1995</b>. In <b>1998</b> PHP 3 was released which was the first mostly used version. <b>2000</b> for PHP 4 comes with the updates of security and for PHP 5 in <b>2004</b> with the updated Zend Engine 2.0. Then later came PHP 6 which has been in development since October 2006.
                 </p>
                 <h2>PHP Syntax</h2>
-                <p>same to html, it has an opening and closing tags which tells
-PHP to begin or stop the interpretation of the code between those tags.
+                <p>same to html, it has an opening and closing tags which tells PHP to begin or stop the interpretation of the code between those tags.
                 </p>
                 <h3>Sample:</h3>
-                <img src="dbquery.PNG" style='margin: 40px; border-radius: 10px;'>
-            <div id="phptypes">
-                <h2>Types</h2>
+                <img src="dbquery.PNG" style='margin: 40px; border-radius: 10px;' alt='query'>
+                <div id="phptypes">
+                    <h2>Types</h2>
                     <p>Booleans - boolean expresses where the statement is true or false and it the simplest type.</p>
                     <p>Integers - is a set of numbers that are specified in decimal, hexadecimal, octal, or binary.</p>
                     <p>Floating point numbers - also known as real numbers or doubles that are specified depending on the syntaxes.</p>
                     <p>Strings - are characters where these characters is similar to a byte meaning that PHP supports a character set , the 256 character set.</p>
-                    <p>Arrays - an array in PHP is an ordered map. A type that associates values to keys optimizied
-for different uses; as a list, hash table dictionary,stack, queue and etc. </p>
-                    <p>Iterables - is a pseudo-type and accepts any object or array implementing the Traversable
-interface.</p>
-        </div>
-                <div id="functions">
-                <h2>Functions</h2>
-                <p>User-define functions - a function that defined using the syntax below.</p>
-                <p>Variable functions - if a variable name has parentheses, php will search
-for the function that has the same name and will execute that function.</p>
-                <h3>Sample:</h3>
-                    <img src="functions.PNG" style='margin: 30px; border-radius: 10px;'> 
+                    <p>Arrays - an array in PHP is an ordered map. A type that associates values to keys optimizied for different uses; as a list, hash table dictionary,stack, queue and etc. </p>
+                    <p>Iterables - is a pseudo-type and accepts any object or array implementing the Traversable interface.
+                    </p>
                 </div>
-    </div>
-            <h2 id="javascript">JavaServer Pages</h2>
-                    </div>
-                    <div class ="row1">
+                <div id="functions">
+                    <h2>Functions</h2>
+                    <p>User-define functions - a function that defined using the syntax below.</p>
+                    <p>Variable functions - if a variable name has parentheses, php will search for the function that has the same name and will execute that function.</p>
+                    <h3>Sample:</h3>
+                    <img src="functions.PNG" style='margin: 30px; border-radius: 10px;' alt='func'>
+                </div>
+            </div>
+            <button class='topic' onclick="hidemaintopic5()">JSP</button>
+            <div id="maintopic5" class='jsp' style="display:none;">
+                <h2 id="java">JavaServer Pages</h2>
+
+                <div class="row1">
                     <p>Java Server Page (JSP) is a technology for controlling the content or appearance of Web pages through the use of servlets, small programs that are specified in the Web page and run on the Web server to modify the Web page before it is sent to the user who requested it. </p>
+                </div>
+            
+
+              
+                    <div class="page-header">
+                        <h2 id="datatypes7">JSP and Servlet Containers</h2>
                     </div>
-                </section>
-                    
-                   <section>
-                       <div class ="page-header">
-                       <h2 id="datatypes">JSP and Servlet Containers</h2>
-                       </div>
-                       <div class ="row">
-                       <p>This section will show the different types of servlets that are supported by almost all operating systems</p>
-                           <br>
-                       </div>
-                       <div class ="row1">
-                        <details>
-                            <summary>JSP Servlets</summary>
-                            <li><strong>Tomcat</strong></li>
-                                <p>Runs on almost all operating systems that support JDK 1.3 or later.</p>
-                            <li><strong>Macromedia Run</strong></li>
-                                <p>JRun is a servlet and JSP engine that can be used in standalone mode for development or plugged into most common commercial Web servers for deployment. It is free for development purposes, but you must purchase a license before deploying with it. It is popular among developers looking for easier deployment compared to Tomcat.</p>
-                            <li><strong>Caucho Resin</strong></li>
-                                <p>Resin is a fast servlet and JSP engine with extensive XML support.</p>
-                            <li><strong>New Atlanta ServletExec.</strong></li>
-                                <p> ServletExec is another popular servlet and JSP engine that can be used in standalone mode for development or, for deployment, plugged into the Microsoft IIS, Apache, and Sun ONE servers.</p>
-                            <li><strong>Jetty</strong></li>
-                                <p>Jetty is an open-source server that supports servlets and JSP technology and is free for both development and deployment. It is often used as a complete standalone server (rather than integrated inside a non-Java Web server), even for deployment.</p>
-                       </details>
-                       </div>
-                    </section>
-                    
-                    <section>
-                        <div class ="page-header">
-                        <h3 id="datatypes">JSP Elements</h3>
-                        </div>
-                        <div class="row">
-                        <p>These will show the different types of JSP Elements being used.</p>
-                       <details>
-                            <summary>JSP Elements</summary>
-                            <li><strong>JSP Comment</strong></li>
-                            <p>JSP Comment is used when you are creating a JSP page and want to put in comments about what you are doing.</p>
-                           <code><%-- comment --%></%--></code>
-                            <li><strong>JSP Directive</strong></li>
-                            <p>JSP Directive gives special instruction to Web Container at the time of page translation.</p>
-                           <code><%@ directive %></%@></code>
-                            <li><strong>JSP Declaration</strong></li>
-                            <p>If declared inside a declaration tag, it means the declaration is made inside the Servlet class but outside the service(or any other) method. You can declare static member, instance variable and methods inside Declaration Tag. </p>
-                           <code><%! declarations %></%!></code>
-                            <li><strong>JSP Scriptlet</strong></li>
-                            <p>Allows you to write java code inside JSP page.</p>
-                           <code><% scriplets %></%></code>
-                            <li><strong>JSP Expression</strong></li>
-                            <p>Is used to print out java language expression that is put between the tags.</p>
-                           <code><%= expression %></%></code>
-                        </details>
-                                </div>
-                                </section>
-                    
-                    <section>
-                        <div class="page-header">
-                        <h4 id="datatypes">JSP Actions</h4>
-                        </div>
-                        <div class="row">
-                        <p>These actions use constructs in XML syntax to control the behavior of the servlet engine.</p>
-                            <details>
-                                <summary>JSP Actions</summary>
-                                <li><strong>jsp:include</strong></li>
-                                <p>Includes a file at the time the page is requested.</p>
-                                <li><strong>jsp:useBean</strong></li>
-                                <p>Finds or instantiates a JavaBean.</p>
-                                <li><strong>jsp:setProperty</strong></li>
-                                <p>Sets the property of a JavaBean.</p>
-                                <li><strong>jsp:getProperty</strong></li>
-                                <p>Inserts the property of a JavaBean into the output.</p>
-                                <li><strong>jsp:forward</strong></li>
-                                <p>Forwards the requester to a new page.</p>
-                                <li><strong>jsp:plugin</strong></li>
-                                <p>Generates browser-specific code that makes an OBJECT or EMBED tag for the Java plugin.</p>
-                                <li><strong>jsp:element</strong></li>
-                                <p>Defines XML elements dynamically.</p>
-                                <li><strong>jsp:attribute</strong></li>
-                                <p>Defines dynamically-defined XML element's attribute.</p>
-                                <li><strong>jsp:body</strong></li>
-                                <p>Defines dynamically-defined XML element's body.</p>
-                                <li><strong>jsp:text</strong></li>
-                                <p>Used to write template text in JSP pages and documents.</p>
-                            </details>
-                        </div>
-                    </section>
-                    
-                    <section>
-                        <div class="page-header">
-                        <h5 id="datatypes">Implicit Scripting Objects</h5>
-                        </div>
-                        <div class="row">
-                        <p>This section will show the different scripting objects being used in JSP</p>
-                            <details>
-                                <summary>Implicit Scripting Objects</summary>
-                                <li><strong>request</strong></li>
-                                <li><strong>response</strong></li>
-                                <li><strong>out</strong></li>
-                                <li><strong>pageContext</strong></li>
-                                <li><strong>session</strong></li>
-                                <li><strong>application</strong></li>
-                                <li><strong>config</strong></li>
-                                <li><strong>page</strong></li>
-                                <li><strong>exception</strong></li>
-                            </details>
-                        </div>
-                    </section>
-                    
-                    <section>
-                        <div class="page-header">
-                        <h5 id="datatypes">Implicit EL Objects</h5>
-                        </div>
-                        <div class="row">
-                        <p>This section will show the different EL objects being used in JSP</p>
-                            <details>
-                                <summary>Implicit EL Objects</summary>
-                                <li><strong>pageContext</strong></li>
-                                <li><strong>pageScope</strong></li>
-                                <li><strong>requestScope</strong></li>
-                                <li><strong>sessionScope</strong></li>
-                                <li><strong>applicationScope</strong></li>
-                                <li><strong>param, paramValues</strong></li>
-                                <li><strong>header, headerValues</strong></li>
-                                <li><strong>cookie</strong></li>
-                                <li><strong>initparam</strong></li>
-                            </details>
-                        </div>
-                    </section>
+                    <div class="row">
+                        <p>This section will show the different types of servlets that are supported by almost all operating systems</p>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <h3>JSP Servlets</h3>
+                        <ul>
+                           
+                            <li>Tomcat-Runs on almost all operating systems that support JDK 1.3 or later.</li>
+                            <li>Macromedia Run-
+                            JRun is a servlet and JSP engine that can be used in standalone mode for development or plugged into most common commercial Web servers for deployment. It is free for development purposes, but you must purchase a license before deploying with it. It is popular among developers looking for easier deployment compared to Tomcat.</li>
+                            <li>Caucho Resin-
+                            Resin is a fast servlet and JSP engine with extensive XML support.</li>
+                            <li>New Atlanta ServletExec.
+                            ServletExec is another popular servlet and JSP engine that can be used in standalone mode for development or, for deployment, plugged into the Microsoft IIS, Apache, and Sun ONE servers.</li>
+                            <li>Jetty-
+                                Jetty is an open-source server that supports servlets and JSP technology and is free for both development and deployment. It is often used as a complete standalone server (rather than integrated inside a non-Java Web server), even for deployment.</li>
+                        </ul>
+                    </div>
+              
 
-
-    <script>
-        function hideHeaders() {
-
-            var x = document.getElementById('httpmeshead');
-            if (x.style.display === 'block') {
-                x.style.display = 'none';
-            } else {
-                x.style.display = 'block';
-            }
-
-        }
-
-        function hideMethods() {
-
-            var y = document.getElementById('httpmethods');
-            if (y.style.display === 'block') {
-                y.style.display = 'none';
-            } else {
-                y.style.display = 'block';
-            }
-
-        }
-
-        function hidegenHead() {
-
-            var z = document.getElementById('genhead');
-            if (z.style.display === 'block') {
-                z.style.display = 'none';
-            } else {
-                z.style.display = 'block';
-            }
-
-        }
-
-        function hidereqHead() {
-
-            var q = document.getElementById('reqhead');
-            if (q.style.display === 'block') {
-                q.style.display = 'none';
-            } else {
-                q.style.display = 'block';
-            }
-
-        }
-
-        function hideresHead() {
-
-            var w = document.getElementById('reshead');
-            if (w.style.display === 'block') {
-                w.style.display = 'none';
-            } else {
-                w.style.display = 'block';
-            }
-
-        }
-
-        function hideentHead() {
-
-            var e = document.getElementById('enthead');
-            if (e.style.display === 'block') {
-                e.style.display = 'none';
-            } else {
-                e.style.display = 'block';
-            }
-
-        }
-
-        function hidestatHead() {
-
-            var d = document.getElementById('status');
-            if (d.style.display === 'block') {
-                d.style.display = 'none';
-            } else {
-                d.style.display = 'block';
-            }
-
-        }
-
-        function hidewhatCan() {
-
-            var n = document.getElementById('whatcanjs');
-            if (n.style.display === 'block') {
-                n.style.display = 'none';
-            } else {
-                n.style.display = 'block';
-            }
-
-        }
-
-        function hideList() {
-
-            var a = document.getElementById('listahan');
-            if (a.style.display === 'block') {
-                a.style.display = 'none';
-            } else {
-                a.style.display = 'block';
-            }
-
-        }
-
-        function hidemaintopic() {
-
-            var z = document.getElementById('maintopic');
-            if (z.style.display === 'block') {
-                z.style.display = 'none';
-            } else {
-                z.style.display = 'block';
-            }
-
-        }
-
-        function hidemaintopic2() {
-
-            var z = document.getElementById('maintopic2');
-            if (z.style.display === 'block') {
-                z.style.display = 'none';
-            } else {
-                z.style.display = 'block';
-            }
-
-        }
-
-        function hidemaintopic3() {
-
-            var z = document.getElementById('maintopic3');
-            if (z.style.display === 'block') {
-                z.style.display = 'none';
-            } else {
-                z.style.display = 'block';
-            }
-
-        }
-           
-        function hidemaintopic4() {
-
-            var p = document.getElementById('maintopic4');
-            if (p.style.display === 'block') {
-                p.style.display = 'none';
-            } else {
-                p.style.display = 'block';
-            }
-
-        }
-        function hideTypes() {
-
-            var o = document.getElementById('types');
-            if (o.style.display === 'block') {
-                o.style.display = 'none';
-            } else {
-                o.style.display = 'block';
-            }
-
-        }
-
-        function hidehtmlversions() {
-
-            var z = document.getElementById('htmlversions');
-            if (z.style.display === 'block') {
-                z.style.display = 'none';
-            } else {
-                z.style.display = 'block';
-            }
-
-        }
+             
+                    <div class="page-header">
+                        <h3 id="datatypes1">JSP Elements</h3>
+                    </div>
+                    <div class="row">
+                        <h3>JSP Elements</h3>
+                        <ul>
+                          
+                            <li>JSP Comment
+                            JSP Comment is used when you are creating a JSP page and want to put in comments about what you are doing.</li>
+                            <li>JSP DirectiveJSP Directive gives special instruction to Web Container at the time of page translation.</li>
+                     
+                            <li>JSP Declaration
+                            If declared inside a declaration tag, it means the declaration is made inside the Servlet class but outside the service(or any other) method. You can declare static member, instance variable and methods inside Declaration Tag.</li>
+                         
+                            <li>JSP Scriptlet
+                                Allows you to write java code inside JSP page.</li>
+                         
+                            <li>JSP Expression
+                           Is used to print out java language expression that is put between the tags.</li>
+                           
+                        </ul>
+                    </div>
            
 
 
-    </script>
+                <div class="page-header">
+                    <h4 id="datatypes2">JSP Actions</h4>
+                </div>
+                <div class="row">
+                    <p>These actions use constructs in XML syntax to control the behavior of the servlet engine.</p>
+                    <h3>JSP Actions</h3>
+                    <ul>
+                       
+                        <li>jsp:include
+                        Includes a file at the time the page is requested.</li>
+                        <li>jsp:useBean
+                        Finds or instantiates a JavaBean.</li>
+                        <li>jsp:setProperty
+                        Sets the property of a JavaBean.</li>
+                        <li>jsp:getProperty
+                        Inserts the property of a JavaBean into the output.</li>
+                        <li>jsp:forward
+                        Forwards the requester to a new page.</li>
+                        <li>jsp:plugin
+                       Generates browser-specific code that makes an OBJECT or EMBED tag for the Java plugin.</li>
+                        <li>jsp:element
+                        Defines XML elements dynamically.</li>
+                        <li>jsp:attribute
+                        Defines dynamically-defined XML element's attribute.</li>
+                        <li>jsp:body
+                        Defines dynamically-defined XML element's body.</li>
+                        <li>jsp:text
+                        Used to write template text in JSP pages and documents.</li>
+                    </ul>
+                </div>
+
+
+
+                <div class="page-header">
+                    <h5 id="datatypes3">Implicit Scripting Objects</h5>
+                </div>
+                <div class="row">
+                    <p>This section will show the different scripting objects being used in JSP</p>
+                     <h3>Implicit Scripting Objects</h3>
+                    <ul>
+                       
+                        <li>request</li>
+                        <li>response</li>
+                        <li>out</li>
+                        <li>pageContext</li>
+                        <li>session</li>
+                        <li>application</li>
+                        <li>config</li>
+                        <li>page</li>
+                        <li>exception</li>
+                    </ul>
+                </div>
+
+
+
+                <div class="page-header">
+                    <h5 id="datatypes4">Implicit EL Objects</h5>
+                </div>
+                <div class="row">
+                    <p>This section will show the different EL objects being used in JSP</p>
+                    <h3>Implicit EL Objects</h3>
+                    <ul>
+                        
+                        <li>pageContext</li>
+                        <li>pageScope</li>
+                        <li>requestScope</li>
+                        <li>sessionScope</li>
+                        <li>applicationScope</li>
+                        <li>param, paramValues</li>
+                        <li>header, headerValues</li>
+                        <li>cookie</li>
+                        <li>initparam</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+        </div>
+
+
+        <script>
+            function hideHeaders() {
+
+                var x = document.getElementById('httpmeshead');
+                if (x.style.display === 'block') {
+                    x.style.display = 'none';
+                } else {
+                    x.style.display = 'block';
+                }
+
+            }
+
+            function hideMethods() {
+
+                var y = document.getElementById('httpmethods');
+                if (y.style.display === 'block') {
+                    y.style.display = 'none';
+                } else {
+                    y.style.display = 'block';
+                }
+
+            }
+
+            function hidegenHead() {
+
+                var z = document.getElementById('genhead');
+                if (z.style.display === 'block') {
+                    z.style.display = 'none';
+                } else {
+                    z.style.display = 'block';
+                }
+
+            }
+
+            function hidereqHead() {
+
+                var q = document.getElementById('reqhead');
+                if (q.style.display === 'block') {
+                    q.style.display = 'none';
+                } else {
+                    q.style.display = 'block';
+                }
+
+            }
+
+            function hideresHead() {
+
+                var w = document.getElementById('reshead');
+                if (w.style.display === 'block') {
+                    w.style.display = 'none';
+                } else {
+                    w.style.display = 'block';
+                }
+
+            }
+
+            function hideentHead() {
+
+                var e = document.getElementById('enthead');
+                if (e.style.display === 'block') {
+                    e.style.display = 'none';
+                } else {
+                    e.style.display = 'block';
+                }
+
+            }
+
+            function hidestatHead() {
+
+                var d = document.getElementById('status');
+                if (d.style.display === 'block') {
+                    d.style.display = 'none';
+                } else {
+                    d.style.display = 'block';
+                }
+
+            }
+
+            function hidewhatCan() {
+
+                var n = document.getElementById('whatcanjs');
+                if (n.style.display === 'block') {
+                    n.style.display = 'none';
+                } else {
+                    n.style.display = 'block';
+                }
+
+            }
+
+            function hideList() {
+
+                var a = document.getElementById('listahan');
+                if (a.style.display === 'block') {
+                    a.style.display = 'none';
+                } else {
+                    a.style.display = 'block';
+                }
+
+            }
+
+            function hidemaintopic() {
+
+                var z = document.getElementById('maintopic');
+                if (z.style.display === 'block') {
+                    z.style.display = 'none';
+                } else {
+                    z.style.display = 'block';
+                }
+
+            }
+
+            function hidemaintopic2() {
+
+                var z = document.getElementById('maintopic2');
+                if (z.style.display === 'block') {
+                    z.style.display = 'none';
+                } else {
+                    z.style.display = 'block';
+                }
+
+            }
+
+            function hidemaintopic3() {
+
+                var z = document.getElementById('maintopic3');
+                if (z.style.display === 'block') {
+                    z.style.display = 'none';
+                } else {
+                    z.style.display = 'block';
+                }
+
+            }
+
+            function hidemaintopic4() {
+
+                var p = document.getElementById('maintopic4');
+                if (p.style.display === 'block') {
+                    p.style.display = 'none';
+                } else {
+                    p.style.display = 'block';
+                }
+
+            }
+
+            function hidemaintopic5() {
+
+                var p = document.getElementById('maintopic5');
+                if (p.style.display === 'block') {
+                    p.style.display = 'none';
+                } else {
+                    p.style.display = 'block';
+                }
+
+            }
+
+
+            function hideTypes() {
+
+                var o = document.getElementById('types');
+                if (o.style.display === 'block') {
+                    o.style.display = 'none';
+                } else {
+                    o.style.display = 'block';
+                }
+
+            }
+
+            function hidehtmlversions() {
+
+                var z = document.getElementById('htmlversions');
+                if (z.style.display === 'block') {
+                    z.style.display = 'none';
+                } else {
+                    z.style.display = 'block';
+                }
+
+            }
+
+        </script>
+
+
 </body>
-
 
 </html>
