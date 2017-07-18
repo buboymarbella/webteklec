@@ -1271,6 +1271,7 @@ document.write('from DDC in Action.');</i>
                            
                         </ul>
                     </div>
+<<<<<<< HEAD
            
 
 
@@ -1364,6 +1365,225 @@ document.write('from DDC in Action.');</i>
                     x.style.display = 'block';
                 }
 
+=======
+                </section>
+                    
+                   <section>
+                       <div class ="page-header">
+                       <h2 id="datatypes">JSP and Servlet Containers</h2>
+                       </div>
+                       <div class ="row">
+                       <p>This section will show the different types of servlets that are supported by almost all operating systems</p>
+                           <br>
+                       </div>
+                       <div class ="row1">
+                        <details>
+                            <summary>JSP Servlets</summary>
+                            <li><strong>Tomcat</strong></li>
+                                <p>Runs on almost all operating systems that support JDK 1.3 or later.</p>
+                            <li><strong>Macromedia Run</strong></li>
+                                <p>JRun is a servlet and JSP engine that can be used in standalone mode for development or plugged into most common commercial Web servers for deployment. It is free for development purposes, but you must purchase a license before deploying with it. It is popular among developers looking for easier deployment compared to Tomcat.</p>
+                            <li><strong>Caucho Resin</strong></li>
+                                <p>Resin is a fast servlet and JSP engine with extensive XML support.</p>
+                            <li><strong>New Atlanta ServletExec.</strong></li>
+                                <p> ServletExec is another popular servlet and JSP engine that can be used in standalone mode for development or, for deployment, plugged into the Microsoft IIS, Apache, and Sun ONE servers.</p>
+                            <li><strong>Jetty</strong></li>
+                                <p>Jetty is an open-source server that supports servlets and JSP technology and is free for both development and deployment. It is often used as a complete standalone server (rather than integrated inside a non-Java Web server), even for deployment.</p>
+                       </details>
+                       </div>
+                    </section>
+                    
+                    <section>
+                        <div class ="page-header">
+                        <h3 id="datatypes">JSP Elements</h3>
+                        </div>
+                        <div class="row">
+                        <p>These will show the different types of JSP Elements being used.</p>
+                       <details>
+                            <summary>JSP Elements</summary>
+                            <li><strong>JSP Comment</strong></li>
+                            <p>JSP Comment is used when you are creating a JSP page and want to put in comments about what you are doing.</p>
+                           <code><%-- comment --%></%--></code>
+                            <li><strong>JSP Directive</strong></li>
+                            <p>JSP Directive gives special instruction to Web Container at the time of page translation.</p>
+                           <code><%@ directive %></%@></code>
+                            <li><strong>JSP Declaration</strong></li>
+                            <p>If declared inside a declaration tag, it means the declaration is made inside the Servlet class but outside the service(or any other) method. You can declare static member, instance variable and methods inside Declaration Tag. </p>
+                           <code><%! declarations %></%!></code>
+                            <li><strong>JSP Scriptlet</strong></li>
+                            <p>Allows you to write java code inside JSP page.</p>
+                           <code><% scriplets %></%></code>
+                            <li><strong>JSP Expression</strong></li>
+                            <p>Is used to print out java language expression that is put between the tags.</p>
+                           <code><%= expression %></%></code>
+                        </details>
+                                </div>
+                                </section>
+                    
+                    <section>
+                        <div class="page-header">
+                        <h4 id="datatypes">JSP Actions</h4>
+                        </div>
+                        <div class="row">
+                        <p>These actions use constructs in XML syntax to control the behavior of the servlet engine.</p>
+                            <details>
+                                <summary>JSP Actions</summary>
+                                <li><strong>jsp:include</strong></li>
+                                <p>Includes a file at the time the page is requested.</p>
+                                <li><strong>jsp:useBean</strong></li>
+                                <p>Finds or instantiates a JavaBean.</p>
+                                <li><strong>jsp:setProperty</strong></li>
+                                <p>Sets the property of a JavaBean.</p>
+                                <li><strong>jsp:getProperty</strong></li>
+                                <p>Inserts the property of a JavaBean into the output.</p>
+                                <li><strong>jsp:forward</strong></li>
+                                <p>Forwards the requester to a new page.</p>
+                                <li><strong>jsp:plugin</strong></li>
+                                <p>Generates browser-specific code that makes an OBJECT or EMBED tag for the Java plugin.</p>
+                                <li><strong>jsp:element</strong></li>
+                                <p>Defines XML elements dynamically.</p>
+                                <li><strong>jsp:attribute</strong></li>
+                                <p>Defines dynamically-defined XML element's attribute.</p>
+                                <li><strong>jsp:body</strong></li>
+                                <p>Defines dynamically-defined XML element's body.</p>
+                                <li><strong>jsp:text</strong></li>
+                                <p>Used to write template text in JSP pages and documents.</p>
+                            </details>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <div class="page-header">
+                        <h5 id="datatypes">Implicit Scripting Objects</h5>
+                        </div>
+                        <div class="row">
+                        <p>This section will show the different scripting objects being used in JSP</p>
+                            <details>
+                                <summary>Implicit Scripting Objects</summary>
+                                <li><strong>request</strong></li>
+                                <li><strong>response</strong></li>
+                                <li><strong>out</strong></li>
+                                <li><strong>pageContext</strong></li>
+                                <li><strong>session</strong></li>
+                                <li><strong>application</strong></li>
+                                <li><strong>config</strong></li>
+                                <li><strong>page</strong></li>
+                                <li><strong>exception</strong></li>
+                            </details>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <div class="page-header">
+                        <h5 id="datatypes">Implicit EL Objects</h5>
+                        </div>
+                        <div class="row">
+                        <p>This section will show the different EL objects being used in JSP</p>
+                            <details>
+                                <summary>Implicit EL Objects</summary>
+                                <li><strong>pageContext</strong></li>
+                                <li><strong>pageScope</strong></li>
+                                <li><strong>requestScope</strong></li>
+                                <li><strong>sessionScope</strong></li>
+                                <li><strong>applicationScope</strong></li>
+                                <li><strong>param, paramValues</strong></li>
+                                <li><strong>header, headerValues</strong></li>
+                                <li><strong>cookie</strong></li>
+                                <li><strong>initparam</strong></li>
+                            </details>
+                        </div>
+                    </section>
+       <!--start Jservlet -->
+    <h3 id="html-elements2">JAVA Servlet</h3>
+<h3 id="html-elements2">Introduction</h3>
+<p>Java servlet is a Java program that extends the capabilities of a server. Although servlets can</p> <p>respond to any types of requests, they most commonly implement applications hosted on Web servers.</p> <p>Such Web servlets are the Java counterpart to other dynamic Web content technologies such as PHP and</p> <p>ASP.NET. A Java servlet processes or stores a Java class in Java EE that conforms to the Java Servlet API</p>
+
+<h3 id="html-elements2">History</h3>
+<p>The Servlet1 specification was created by Pavni Diwanji while she worked at Sun Microsystems, with</p> <p>version 1.0 finalized in June 1997. Starting with version 2.2, the specification was developed under</p> the <p>Java Community Process. As of June 9, 2015, the current version of the Servlet specification is 3.1.</p>
+
+<img src="samp.png" style="width:1012px;height:584px;">
+
+
+
+<div class="row4">
+                    
+                    <table class="table-fill table-bordered">
+
+
+                        <thead>
+                            <tr class="tablehead">
+                                <th class="text-left">Methods</th>
+                                <th class="text-center">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-hover">
+                            <tr>
+                                <td class="text-center"> doGet </td>
+                                <td class="text-left">If the servlet supports HTTP GET requests</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center"> doPost </td>
+                                <td class="text-left">For HTTP POST requests</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center"> doPut </td>
+                                <td class="text-left">For HTTP PUT requests</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center"> doDelete </td>
+                                <td class="text-left">For HTTP DELETE requests</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center"> init and destroy</td>
+                                <td class="text-left">To manage resources that are held for the life of the servlet </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center"> getServletInfo
+ </td>
+                                <td class="text-left">Which the servlet uses to provide information about itself</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center"> doOptions </td>
+                                <td class="text-left">Allow a servlet to handle a OPTIONS request.</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center"> doTrace</td>
+                                <td class="text-left">Allow a servlet to handle a TRACE request. </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center"> getLastModified</td>
+                                <td class="text-left">,  Returns the time the HttpServletRequest object was last modified, in milliseconds since midnight January 1, 1970 GMT. </td>
+                            </tr>
+
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+<h3 id="html-elements2">Sample JAVA Servlet code</h3>
+<img src="samplecode.png" style="width:1012px;height:584px;">
+
+
+    <!--stop Jservlet -->
+
+
+    <script>
+        function hideHeaders() {
+
+            var x = document.getElementById('httpmeshead');
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+>>>>>>> 2538f7425cf6cb0109120a2f76d97b821e9b03dd
             }
 
             function hideMethods() {
